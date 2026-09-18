@@ -23,6 +23,10 @@ If a valid local copy already exists, do not redownload it unnecessarily.
 - Prefer SVG when the framework supports it correctly.
 - Use PNG only as a fallback where SVG is unsuitable.
 
+Use the `light` or `dark` variant when the purpose is an actual readable author signature in a footer, menu, About screen, settings area, or product chrome.
+
+Use the `watermark` variant only when the artwork is intentionally decorative and visually integrated into a larger area. Do not use the watermark asset as a tiny footer badge.
+
 ## Placement
 
 The signature should be visually integrated but subordinate to the primary UI. It must not obstruct controls, important text, gameplay, navigation, or accessibility-critical content.
@@ -34,6 +38,61 @@ Allowed implementation-level adjustments:
 - application-level opacity.
 
 Do not modify the official artwork itself unless explicitly instructed.
+
+## Size and readability
+
+The signature must be secondary, but it must still be readable.
+
+For normal readable `light` / `dark` signature placement:
+
+- desktop/web target width: approximately 200–240 px;
+- compact desktop placement: approximately 180–200 px;
+- default desktop/web minimum width: 180 px;
+- mobile target width: approximately 150–190 px;
+- default mobile minimum width: 145 px;
+- typical opacity: 0.80–1.00.
+
+For decorative `watermark` placement:
+
+- typical width: approximately 280–420 px or larger when appropriate;
+- typical opacity: approximately 0.12–0.30;
+- keep the artwork large enough that the composition and `made by tatarin` text remain identifiable;
+- make it quieter with opacity, placement, or surrounding contrast rather than excessive downscaling.
+
+At 100% interface zoom, a user should be able to recognize `made by tatarin` without zooming in or closely inspecting the asset.
+
+Do not make the signature extremely small merely to satisfy a requirement that it be "subtle." If the text becomes difficult to read, increase the rendered size.
+
+If the available footer or toolbar cannot accommodate a readable signature, prefer one of these solutions instead of shrinking it below the recommended minimum:
+
+- give the branding area more horizontal space;
+- move the signature to another edge or footer row;
+- place it on the main menu, landing screen, About, Settings, or Credits screen;
+- use the standard `light` / `dark` asset instead of the watermark variant.
+
+A coding agent should treat these size values as the default branding standard. Project-specific requirements or explicit user instructions may override them.
+
+Example CSS direction for a standard desktop footer:
+
+```css
+.branding-signature {
+  width: clamp(180px, 15vw, 240px);
+  height: auto;
+  opacity: 0.9;
+}
+```
+
+Example CSS direction for a decorative watermark:
+
+```css
+.branding-watermark {
+  width: clamp(280px, 28vw, 420px);
+  height: auto;
+  opacity: 0.2;
+}
+```
+
+Adapt implementation syntax to the framework in use; the readability rule matters more than the exact CSS.
 
 ## Recommended placement by application type
 
@@ -55,7 +114,7 @@ Example:
 └────────────────────────────────────────┘
 ```
 
-The signature should remain visually secondary to the application's primary content and controls.
+The signature should remain visually secondary to the application's primary content and controls, but it should not be reduced below comfortable readability.
 
 ### Games
 
