@@ -22,6 +22,8 @@ viewBox="0 0 1600 400"
 
 All official variants should use the same viewBox and proportions so they can be swapped without layout shifts.
 
+The 1600×400 value describes the canonical asset canvas / export size. It is not the intended on-screen size inside an application.
+
 ## Required variants
 
 - `made-by-tatarin-light.svg` — for dark interfaces
@@ -49,6 +51,32 @@ Equivalent PNG fallback exports should use the same base names.
 - PNG: reference export at 1600×400 with transparency; preferably below 500 KB where practical.
 
 These are optimization targets, not hard limits.
+
+## On-screen size and readability requirements
+
+The signature must remain clearly readable at normal 100% interface scale. "Subtle" means visually secondary, not tiny, faint, or illegible.
+
+For the standard `light` / `dark` signature variants:
+
+- desktop and web footer target width: approximately 200–240 px;
+- compact desktop placement: approximately 180–200 px;
+- default desktop/web minimum width: 180 px;
+- mobile target width: approximately 150–190 px;
+- default mobile minimum width: 145 px;
+- typical application-level opacity: 0.80–1.00.
+
+Do not render the standard signature below these default minimums unless an explicit project requirement or user instruction calls for a smaller treatment and the text still remains comfortably readable.
+
+For `made-by-tatarin-watermark.svg`:
+
+- treat it as a decorative watermark, not as a tiny footer logo;
+- typical on-screen width: approximately 280–420 px or larger when the composition requires it;
+- typical application-level opacity: approximately 0.12–0.30;
+- reduce visual prominence with opacity and placement, not by shrinking it until the canonical text becomes unreadable.
+
+If available space is too small for a readable signature, prefer moving it to a better location, changing the layout, or using an About / Settings / Credits placement instead of compressing it into an unreadable size.
+
+At normal 100% zoom, the text `made by tatarin` must be recognizable without requiring the user to zoom, inspect the image closely, or infer the text from the artwork.
 
 ## Design constraints
 
