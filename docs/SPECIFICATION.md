@@ -58,25 +58,32 @@ The signature must remain clearly readable at normal 100% interface scale. "Subt
 
 For the standard `light` / `dark` signature variants:
 
-- desktop and web footer target width: approximately 200–240 px;
-- compact desktop placement: approximately 180–200 px;
 - default desktop/web minimum width: 180 px;
-- mobile target width: approximately 150–190 px;
 - default mobile minimum width: 145 px;
 - typical application-level opacity: 0.80–1.00.
+
+These values define minimum readable sizes only. Do not treat them as target or fixed sizes. The final rendered size should be chosen by the layout and may be larger whenever space allows and the result remains visually balanced.
 
 Do not render the standard signature below these default minimums unless an explicit project requirement or user instruction calls for a smaller treatment and the text still remains comfortably readable.
 
 For `made-by-tatarin-watermark.svg`:
 
 - treat it as a decorative watermark, not as a tiny footer logo;
-- typical on-screen width: approximately 280–420 px or larger when the composition requires it;
+- default minimum on-screen width: 280 px;
 - typical application-level opacity: approximately 0.12–0.30;
 - reduce visual prominence with opacity and placement, not by shrinking it until the canonical text becomes unreadable.
+
+The minimum watermark width is a readability floor, not a target or fixed size. Use a larger size when the composition has room for it.
 
 If available space is too small for a readable signature, prefer moving it to a better location, changing the layout, or using an About / Settings / Credits placement instead of compressing it into an unreadable size.
 
 At normal 100% zoom, the text `made by tatarin` must be recognizable without requiring the user to zoom, inspect the image closely, or infer the text from the artwork.
+
+## Preferred placement
+
+When technically practical and when it does not interfere with controls, content, navigation, readability, or responsive behavior, place the signature at the very bottom of the interface.
+
+Prefer the lowest suitable footer / bottom area of the product rather than floating the signature above main content. The signature may be placed elsewhere when a bottom placement would harm usability, visual hierarchy, or the intended product experience.
 
 ## Design constraints
 
