@@ -1,8 +1,8 @@
 # tatarin-branding
 
-Official branding assets for projects by Tatarin.
+Official branding assets and shared product UI standards for projects by Tatarin.
 
-This repository is the canonical source for the `made by tatarin` author signature used across UI projects.
+This repository is the canonical source for the `made by tatarin` author signature and the default UI/UX quality standard used across UI projects.
 
 ## Canonical signature text
 
@@ -29,7 +29,13 @@ SVG is the canonical format. PNG files are fallback exports.
 
 Applications should not load these assets from GitHub at runtime. Development agents should download the required official asset into the project and reference the local copy.
 
-See `docs/USAGE.md` and `docs/SPECIFICATION.md` for implementation and design requirements.
+See `docs/USAGE.md` and `docs/SPECIFICATION.md` for implementation and signature design requirements.
+
+## Product UI standard
+
+For new interfaces, redesigns, and material UI changes, use `docs/UI_GUIDELINES.md` as the canonical default UI/UX standard unless the user or the target project provides more specific instructions.
+
+The standard defines the expected contemporary product quality bar, design-system principles, anti-template rules, responsive behavior, interaction states, accessibility, performance, and change discipline for coding agents.
 
 ## Version
 
