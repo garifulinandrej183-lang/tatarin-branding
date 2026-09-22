@@ -801,7 +801,7 @@ Do not sacrifice usability for visual novelty.
 
 At minimum:
 
-- maintain readable contrast;
+- maintain readable contrast; for ordinary text target WCAG AA contrast of at least 4.5:1, and at least 3:1 for large text where the criterion applies;
 - support keyboard focus where appropriate;
 - use visible focus states;
 - provide accessible labels for icon-only controls;
@@ -1077,10 +1077,263 @@ Improve, in order:
 
 ---
 
-## 39. Agent shorthand
+## 39. Contemporary product formula
+
+A strong modern interface usually does not need many competing visual ideas.
+
+Prefer this sequence:
+
+1. calm neutral product shell;
+2. clear typographic hierarchy;
+3. systematic spacing and surfaces;
+4. one strong product identifier;
+5. progressive disclosure of complexity;
+6. a small number of memorable micro-interactions;
+7. motion that explains state changes;
+8. personalization only where it reduces effort.
+
+A strong product identifier may be:
+
+- one semantic brand color;
+- distinctive typography;
+- illustration language;
+- photography or user content;
+- a spatial/canvas model;
+- a restrained icon treatment;
+- another repeatable visual device appropriate to the product.
+
+Do not combine all of them simply to make the product feel more branded.
+
+Separate the **utility layer** from the **brand layer**:
+
+- the utility layer should stay predictable, legible, fast, and restrained;
+- the brand layer may carry more emotion through color, media, illustration, typography, or selected motion.
+
+This separation allows an application to feel distinctive without making every control visually loud.
+
+The `made by tatarin` signature is an authorship layer, not a substitute for product-specific hierarchy or identity. Keep the signature treatment consistent with the branding repository while allowing each product to have an appropriate accent system and visual character.
+
+---
+
+## 40. Progressive disclosure and workspace continuity
+
+Do not show maximum complexity by default.
+
+Prefer:
+
+- summary first;
+- details on demand;
+- contextual side panels;
+- inline editing;
+- expandable sections;
+- bottom sheets on mobile;
+- drill-down only when the task genuinely needs a separate screen.
+
+For data-rich or operational products, avoid unnecessary page hopping. When possible, keep the user's list, timeline, table, canvas, or other working context visible while opening details beside it.
+
+Useful patterns include:
+
+- list + detail split view;
+- table + contextual inspector;
+- inbox + message detail;
+- library + reader;
+- canvas + properties panel;
+- summary card + deeper analysis.
+
+The user should be able to understand where a detail came from and return without losing spatial context.
+
+Do not hide frequent actions too deeply. Progressive disclosure is for complexity, not for making common tasks harder to discover.
+
+---
+
+## 41. Power-user interaction layer
+
+For desktop, web, productivity, B2B, editor, and operational software, consider a second interaction layer for experienced users.
+
+This may include:
+
+- command palette;
+- keyboard shortcuts;
+- quick search;
+- inline commands;
+- context actions;
+- action menus near the selected object.
+
+The visible interface must remain usable without memorizing shortcuts.
+
+A command palette is usually a secondary accelerator, not the only navigation model.
+
+Expose shortcuts gradually near relevant actions so users can learn them through normal use.
+
+On mobile, prefer context actions, gestures, bottom sheets, and predictable navigation instead of forcing desktop-style keyboard interaction.
+
+---
+
+## 42. Data storytelling
+
+Do not begin a data-heavy screen with a wall of charts.
+
+Prefer the sequence:
+
+**answer → explanation → trend → raw detail**
+
+Examples:
+
+- status → why it matters → recent change → full history;
+- deadline risk → main cause → timeline → source records;
+- score → top contributing factors → trend → detailed metrics;
+- operational result → exceptions → progression → raw table.
+
+Important conclusions should exist as text or labels, not only as color or chart shape.
+
+Use semantic color consistently and sparingly.
+
+A brand accent should not also ambiguously represent success, warning, and error.
+
+Charts should support a user question. If a number, label, timeline, or short explanation answers the question better, prefer the simpler representation.
+
+---
+
+## 43. Motion as continuity
+
+Motion should primarily explain what changed.
+
+Good uses include:
+
+- a card expanding into detail;
+- an object moving to a new status;
+- a selected list item opening in a context panel;
+- list and map selections staying synchronized;
+- reorder and drag/drop feedback;
+- success confirmation;
+- loading progressing into real content.
+
+The user should be able to understand the same state change with reduced motion enabled.
+
+Do not make animation necessary to perceive important information.
+
+High motion density is justified mainly when motion or media is itself part of the product, such as video, 3D, presentation, or spatial creative tools.
+
+For ordinary productivity, finance, reading, and operational software, responsiveness and state feedback are usually more valuable than spectacle.
+
+---
+
+## 44. Product archetype recipes
+
+Choose layout and interaction patterns based on the product's dominant job rather than forcing every project into the same visual template.
+
+### Dense B2B / operational software
+
+Default direction:
+
+- compact sidebar;
+- focused top bar;
+- primary list or table;
+- optional context panel;
+- neutral surfaces;
+- one accent;
+- strong text hierarchy;
+- predictable status treatment;
+- keyboard layer for repeated workflows.
+
+Useful references for problem-solving: Linear, Superhuman, Vercel, Raycast.
+
+### Knowledge / workspace products
+
+Default direction:
+
+- stable navigation;
+- modular content;
+- inline controls;
+- progressive disclosure;
+- contextual overlays or panels;
+- low decorative chrome.
+
+Useful references: Notion, Craft, Bear.
+
+### Consumer content products
+
+Default direction:
+
+- let photography, artwork, media, or user content carry more of the visual character;
+- minimize chrome;
+- use clear search/filter/navigation;
+- keep brand color as an accent rather than painting every surface.
+
+Useful references: Airbnb, Pinterest, Spotify.
+
+### Data / health / status products
+
+Default direction:
+
+- high-level answer first;
+- a few clear reasons or insights;
+- trend second;
+- raw detail deeper;
+- strong semantic states;
+- restrained visualization.
+
+Useful references: Oura, Flighty, Strava.
+
+### Creative / AI tools
+
+Default direction:
+
+- project or asset navigation;
+- large central artifact/canvas;
+- contextual inspector;
+- AI actions near the object being edited;
+- visible generation/progress states;
+- preview, undo, and reversible history.
+
+Useful references: Runway, Framer, Spline, Pitch.
+
+Do not copy these products literally. Use them to solve composition, density, hierarchy, and workflow problems.
+
+---
+
+## 45. Cost / value priority
+
+When modernizing a product, prioritize high-value improvements before expensive visual effects.
+
+Highest return in most applications:
+
+- typography hierarchy;
+- consistent spacing;
+- clear surfaces;
+- one controlled accent;
+- semantic status design;
+- progressive disclosure;
+- strong hover / pressed / focus states;
+- loading / empty / success states.
+
+Medium cost, often high impact:
+
+- command palette;
+- split-pane detail;
+- contextual panels;
+- skeleton states;
+- restrained card-to-detail transitions;
+- adaptive dashboard modules;
+- illustration used as state feedback.
+
+High cost, use only when product value justifies it:
+
+- 3D;
+- continuously animated backgrounds;
+- complex parallax;
+- elaborate shared-element choreography;
+- character animation systems;
+- generative decorative visualization.
+
+Do not spend performance budget on effects that do not shorten a task, clarify state, improve comprehension, or strengthen a deliberate product identity.
+
+---
+
+## 46. Agent shorthand
 
 For coding agents, the practical rule is:
 
-> Build or modify UI as a polished contemporary product, not as a generic template. Preserve working logic, respect project-specific references, establish clear hierarchy and a coherent design system, use restrained modern visual effects, implement all relevant states, keep responsive behavior intentional, and avoid unrelated refactors.
+> Build or modify UI as a polished contemporary product, not as a generic template. Preserve working logic, respect project-specific references, establish clear hierarchy and a coherent design system, choose patterns that match the product archetype, keep a calm utility layer with one deliberate identity signal, reveal complexity progressively, implement meaningful states and feedback, use motion for continuity rather than spectacle, keep responsive behavior intentional, and avoid unrelated refactors.
 
 This document is the canonical detailed interpretation of that rule.
