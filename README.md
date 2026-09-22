@@ -39,4 +39,4 @@ The standard defines the expected contemporary product quality bar, design-syste
 
 ## Version
 
-Current branding specification: `1.0.0`
+Current branding specification: `1.1.0`
