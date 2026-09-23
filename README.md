@@ -33,9 +33,16 @@ See `docs/USAGE.md` and `docs/SPECIFICATION.md` for implementation and signature
 
 ## Product UI standard
 
-For new interfaces, redesigns, and material UI changes, use `docs/UI_GUIDELINES.md` as the canonical default UI/UX standard unless the user or the target project provides more specific instructions.
+For new interfaces, redesigns, and material UI changes, use [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md) as the canonical default UI/UX standard unless the user or the target project provides more specific instructions.
 
 The standard defines the expected contemporary product quality bar, design-system principles, anti-template rules, responsive behavior, interaction states, accessibility, performance, and change discipline for coding agents.
+
+Supporting documents:
+
+- [UI pattern library](docs/UI_PATTERNS.md): task-based profiles for operational workspaces, document tools, and focused utilities, with applicability, behavior contracts, and examples.
+- [UI review checklist](docs/UI_REVIEW_CHECKLIST.md): scoped checks for workflow continuity, states, branding, accessibility, offline behavior, and actual review evidence.
+
+The canonical entry point remains [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md). Apply patterns to the task rather than imposing one template or adding unrequested features. Signature assets and rules remain governed by `docs/SPECIFICATION.md` and `docs/USAGE.md`; this UI documentation update does not change the branding specification version.
 
 ## Version
 

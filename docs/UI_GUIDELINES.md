@@ -4,6 +4,8 @@ Canonical UI/UX standard for projects developed by Tatarin.
 
 This document is intended for coding agents and human contributors. It defines the default quality bar for new interfaces, redesigns, and UI changes unless a project-specific requirement or an explicit user instruction overrides it.
 
+Supporting documents: [UI_PATTERNS.md](UI_PATTERNS.md) provides task-based composition recipes, and [UI_REVIEW_CHECKLIST.md](UI_REVIEW_CHECKLIST.md) provides scoped acceptance checks. This file remains the canonical UI standard. [SPECIFICATION.md](SPECIFICATION.md) and [USAGE.md](USAGE.md) remain authoritative for the `made by tatarin` signature.
+
 ---
 
 ## 1. Purpose
@@ -24,6 +26,8 @@ Reference products for **quality level**, not literal copying:
 - other well-designed contemporary SaaS and native applications.
 
 Do **not** copy their branding, layouts, proprietary assets, or visual identity. Use them only as a benchmark for hierarchy, spacing, typography, interaction quality, motion, component states, and product polish.
+
+Aim for a recognizable family of well-made products, not an identical visual template. Share interaction quality, hierarchy, state semantics, and disciplined styling while adapting composition to each product. Keep the official author signature distinct from application accent and status colors. Do not redraw or recolor it, or reinterpret minimum readability sizes as fixed target dimensions. Use the official local asset and prefer bottom-of-interface placement when it does not harm the workflow, as defined in the signature documentation.
 
 ---
 
@@ -107,6 +111,8 @@ If the task is a redesign, first identify what is actually wrong:
 
 Fix the underlying issue instead of masking it with decoration.
 
+For a new interface or substantial redesign, record a short UI decision brief: primary task, supported devices/windows, behavior and approved patterns to preserve, composition profile, specific lessons from selected references, and screens/states to validate. Use the brief in the project's existing approval workflow. Do not impose an extra approval gate or a large design exercise on a small local change unless the user or project requires it.
+
 ---
 
 ## 5. Protect working product logic
@@ -170,6 +176,10 @@ Avoid wrapping every section in a card.
 
 Whitespace, typography, alignment, and surface contrast should do most of the grouping work.
 
+Select a composition for the workflow rather than starting with a dashboard. Operational tools commonly need a useful list/table with optional contextual details; document tools need a dominant document area with contextual navigation and tools; focused utilities may need only a concise single-task surface. See [UI_PATTERNS.md](UI_PATTERNS.md) for applicability and limits.
+
+In repeated list/detail work, preserve relevant query, filters, sorting, selection, scroll, and return focus across detail interactions. Use a dedicated page for a genuinely complex workflow and a predictable Back path on narrow windows. Do not impose fixed sidebar or inspector widths from reference screenshots.
+
 ---
 
 ## 7. Visual hierarchy
@@ -205,6 +215,8 @@ A typical hierarchy may include:
 - label.
 
 Secondary information should actually look secondary.
+
+Where the screen supports monitoring or triage, lead with an actionable answer to the user's question, then the relevant records or explanation, and only then optional analytics. Summaries must agree with the underlying list and domain rules. Never invent metrics or urgency to fill a dashboard. Use a timeline only when chronological information is relevant and available.
 
 ---
 
@@ -306,6 +318,8 @@ Use neutral surfaces and spacing to carry most of the interface.
 
 Do not rely on color alone to communicate status.
 
+A neutral foundation with one dominant accent direction is a useful default, not a mandatory hue or a ban on other justified colors. Keep brand accent, selection, and status roles distinct in meaning. A blue, green, or other brand direction is acceptable when deliberately designed; the problem is an unconsidered template, not the color itself.
+
 ---
 
 ## 11. Design tokens
@@ -364,6 +378,8 @@ Typical token groups:
 
 Do not create token abstractions for values that are genuinely one-off.
 
+Reuse existing tokens before adding new ones. Where repeated operational states or justified density variants need them, define semantic aliases and shared density values rather than unrelated per-screen styles. This is not a requirement to add a density switch, new theme engine, or cross-framework component package.
+
 ---
 
 ## 12. Surfaces, borders, and depth
@@ -378,7 +394,7 @@ Prefer separation through:
 - typography;
 - subtle elevation.
 
-Borders should usually be low-contrast.
+Decorative borders should usually be low-contrast. Borders needed to identify a control or state must meet the applicable contrast requirement in section 28.
 
 Use stronger borders only when they communicate an interaction boundary or state.
 
@@ -493,6 +509,8 @@ Keep related fields grouped.
 
 For complex forms, prefer sections and progressive disclosure instead of one enormous uninterrupted form.
 
+Keep object identity, critical status/warnings, and the primary action visible. Secondary fields may be disclosed on demand, but important functions need a discoverable visual path. Use inline editing for bounded changes with clear validation and save semantics. Preserve input on failure. Introducing autosave or removing a consequential confirmation is a behavior change, not visual polish.
+
 ---
 
 ## 17. Navigation
@@ -522,6 +540,8 @@ It may use:
 Do not overload navigation with decorative elements.
 
 On smaller screens, navigation should transform appropriately rather than merely shrink.
+
+Command search and shortcuts are an optional acceleration layer for repeated desktop workflows, not a substitute for primary navigation or a requirement for small utilities. Keep visible access to important actions. Reuse the same command handlers, validation, scope, and confirmations. Preserve typing, existing shortcuts, and platform conventions; provide clear hints when commands are available.
 
 ---
 
@@ -577,6 +597,8 @@ On narrow screens, choose the best transformation for the data:
 
 Do not blindly stack every cell.
 
+Check realistic identifiers, long names, dates, and status combinations. Define what happens when an updated record leaves the current filter; do not unexpectedly move the user's target or discard edit context. Useful density must come from consistent layout rather than unreadably small text.
+
 ---
 
 ## 20. Status design
@@ -605,6 +627,8 @@ Examples:
 - error / blocked → strong enough to demand attention.
 
 Status wording should be concise and unambiguous.
+
+Use the same domain status vocabulary across rows, details, commands, and summaries. Relative deadline text may supplement a decisive absolute date, not hide it. Separate domain status from persistence feedback: a pending response is not the same state as a pending save. Do not invent or change deadline calculations in a visual-only task.
 
 ---
 
@@ -662,7 +686,7 @@ Avoid unnecessary layout-thrashing animation.
 
 Do not animate every element simultaneously.
 
-Respect reduced-motion preferences where applicable.
+Select one or two characteristic feedback moments when useful instead of animating every element. Motion should explain continuity without becoming the only way to understand an outcome. Simplify or disable nonessential motion under reduced-motion preferences while preserving information and functionality. Reuse existing motion tokens and avoid interaction-blocking effects.
 
 ---
 
@@ -712,6 +736,8 @@ Avoid generic "Something went wrong" if actionable information can be provided.
 Do not show a full-page spinner for every minor operation.
 
 Use optimistic updates only when they are safe and recoverable.
+
+Do not delay a fast operation to display a skeleton or success animation. Show completion only when the relevant operation actually succeeds, or use an explicitly recoverable optimistic state consistent with existing behavior. Preserve actionable error feedback and user input. Do not promise undo unless the operation is actually reversible.
 
 ---
 
@@ -813,6 +839,10 @@ At minimum:
 
 Accessibility should be built into the component behavior, not added only after visual design is finished.
 
+For web UI, apply the relevant WCAG 2.2 AA contrast thresholds: normal text at least 4.5:1; large text at least 3:1 (18 pt regular or 14 pt bold under the criterion's definition); and visual information needed to identify controls, states, or meaningful graphics at least 3:1 against adjacent colors. Respect the criteria's scope and exceptions. These are not blanket contrast requirements for decorative dividers. For native UI, combine equivalent readability goals with platform accessibility guidance.
+
+Test affected focus, selection, status, and theme states, not only the default palette. The reduced-motion rule is an independent project requirement; WCAG SC 2.3.3 is Level AAA. Passing selected contrast and motion checks is not proof of complete WCAG conformance. See the official references in [UI_REVIEW_CHECKLIST.md](UI_REVIEW_CHECKLIST.md).
+
 ---
 
 ## 29. Performance
@@ -832,6 +862,8 @@ Avoid:
 Heavy visual effects require a clear product benefit.
 
 Prefer lightweight polish over spectacle.
+
+In an offline product, UI polish must not introduce a runtime dependency on remote fonts, icons, signatures, analytics, or external AI services. Do not add maps, 3D, continuous background animation, or personalization infrastructure without a specific authorized product need. Use a realistic workload to check the touched list/document surface; distinguish measured or observed results from untested performance claims.
 
 ---
 
@@ -1013,6 +1045,8 @@ When the user says "in the style of Apple / Yandex / Sber", interpret that as:
 
 Do not produce a visual clone.
 
+Prefer a small complementary reference set with an explicit role for each reference: composition, data hierarchy, interaction, or visual tone. Usually two or three are sufficient, but do not enforce a quota. Record what is being borrowed and what is not. A public product gallery or atlas is evidence for a design pattern, not a supplied component implementation or permission to reuse proprietary assets.
+
 ---
 
 ## 37. Validation after implementation
@@ -1042,6 +1076,10 @@ Do not automatically run the entire test suite for a small isolated UI change un
 - targeted checks are insufficient.
 
 Do not modify unrelated failing tests during a UI task unless explicitly requested.
+
+For a meaningful UI change, inspect the affected flow in the running application when possible and retain representative screenshots or equivalent inspectable evidence. Check the relevant normal, empty, loading, failure, focus, theme, and narrow-window states rather than only a polished main screen. Keep checks proportional to the change and project instructions.
+
+A successful build does not establish visual or interaction quality. Report completed checks and actual evidence separately from limitations. If the environment cannot run or render the UI, state that limitation and do not claim visual verification. Use the relevant items in [UI_REVIEW_CHECKLIST.md](UI_REVIEW_CHECKLIST.md).
 
 ---
 
@@ -1082,5 +1120,7 @@ Improve, in order:
 For coding agents, the practical rule is:
 
 > Build or modify UI as a polished contemporary product, not as a generic template. Preserve working logic, respect project-specific references, establish clear hierarchy and a coherent design system, use restrained modern visual effects, implement all relevant states, keep responsive behavior intentional, and avoid unrelated refactors.
+>
+> Choose task-appropriate patterns from [UI_PATTERNS.md](UI_PATTERNS.md), keep the official signature consistent with its own documentation, and validate the changed workflow with scoped evidence from [UI_REVIEW_CHECKLIST.md](UI_REVIEW_CHECKLIST.md). A pattern is not permission to add unrequested product features.
 
 This document is the canonical detailed interpretation of that rule.
