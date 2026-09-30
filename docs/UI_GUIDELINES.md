@@ -1115,11 +1115,23 @@ Improve, in order:
 
 ---
 
-## 39. Agent shorthand
+## 39. Product identity and implementation priority
+
+Build a calm, legible utility layer with a deliberate product identifier. Depending on the task, that identifier may come from typography, an accent, content, illustration, or a spatial workspace. Choose what helps the product; combining every device makes controls compete for attention. Keep the official `made by tatarin` signature as authorship, separate from app identity and semantic status, under the rules in [SPECIFICATION.md](SPECIFICATION.md) and [USAGE.md](USAGE.md).
+
+Reveal secondary complexity when it helps the primary task, but keep frequent actions visible and discoverable. For data-heavy screens, prefer **answer → explanation → trend → source detail** when those layers exist and answer a real user question. A label or short explanation may communicate better than a chart. Never invent trends, metrics, or history to fill that sequence. The applicability and behavior contracts for list/detail continuity, progressive disclosure, commands, and answer-first presentation live in [UI_PATTERNS.md](UI_PATTERNS.md).
+
+Use motion to explain continuity between states, such as opening a detail pane or changing a record status. The result and available actions must remain understandable with reduced motion enabled. Avoid animation that delays work or announces success before completion.
+
+Prioritize composition, type, spacing, semantic states, and feedback before costly effects. Add command search, contextual panes, adaptive modules, 3D, or elaborate animation only when the task and product scope justify their cost. This priority does not authorize new features or dependencies; validate the affected flow using [UI_REVIEW_CHECKLIST.md](UI_REVIEW_CHECKLIST.md).
+
+---
+
+## 40. Agent shorthand
 
 For coding agents, the practical rule is:
 
-> Build or modify UI as a polished contemporary product, not as a generic template. Preserve working logic, respect project-specific references, establish clear hierarchy and a coherent design system, use restrained modern visual effects, implement all relevant states, keep responsive behavior intentional, and avoid unrelated refactors.
+> Build or modify UI as a polished contemporary product, not as a generic template. Preserve working logic, respect project-specific references, establish clear hierarchy and a coherent design system, choose a deliberate identity signal, reveal secondary complexity when useful, use motion to clarify state, implement all relevant states, keep responsive behavior intentional, and avoid unrelated refactors.
 >
 > Choose task-appropriate patterns from [UI_PATTERNS.md](UI_PATTERNS.md), keep the official signature consistent with its own documentation, and validate the changed workflow with scoped evidence from [UI_REVIEW_CHECKLIST.md](UI_REVIEW_CHECKLIST.md). A pattern is not permission to add unrequested product features.
 
