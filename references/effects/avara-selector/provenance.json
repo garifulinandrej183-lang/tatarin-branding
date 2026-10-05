@@ -1,0 +1,150 @@
+{
+  "reference_url": "https://avara.xyz/",
+  "report_date": "2026-10-05",
+  "imported": "2026-10-05",
+  "status": "analysis-only",
+  "report_filename": "Инструкция для Codex.pdf",
+  "report_sha256": "94dcf99cd08c65236cf38b93ff889cc438c45c11f0326cfb322361c4fddac158",
+  "report_pages": 19,
+  "screenshot_count": 17,
+  "source_links": [
+    "https://avara.xyz/",
+    "https://avara.xyz/blog",
+    "https://avara.xyz/blog/lens-chain-mainnet-launch"
+  ],
+  "analysis_format": "Full text of all 19 report pages; tables/pseudocode preserved in fenced blocks; 17 screenshots included; PDF/TXT unchanged.",
+  "prompt_origin": "Independent target-adaptation specification; not executed during catalogue update.",
+  "implementation": null,
+  "source_commit": null,
+  "verification": {
+    "reference_live_observed": true,
+    "reference_live_rechecked_during_import": false,
+    "reference_browser": "Chrome; zoom 100%; desktop 1534x889; temporary viewport override 390x844",
+    "observed": [
+      "overview/wheel",
+      "hover",
+      "drag/snap",
+      "all four desktop detail selections",
+      "cyclic previous",
+      "ArrowRight",
+      "Escape/outside/inside",
+      "logo custom context menu",
+      "mobile Aave/Lens/close/wheel sheet scroll",
+      "Blog Lens filter",
+      "article normal scroll"
+    ],
+    "archive": "PDF rendered and visually inspected; 19 pages, 17 screenshots; file hashes, page-text coverage, JSON and local links checked on import.",
+    "target_implementation_tested": false,
+    "limitations": [
+      "No physical touch/multitouch or mobile Safari",
+      "No measured FPS/GPU",
+      "Character intro not captured reliably",
+      "Exact original JS spring/easing and package dependencies unknown",
+      "Audio event mapping/persistence unverified",
+      "Metadata hover tooltip not separately captured",
+      "Loading shimmer CSS read, forced-loading not tested"
+    ],
+    "details": "implementation.md and ../../VALIDATION.md"
+  },
+  "corrections": [
+    "analysis.md and codex-prompt.md save item=pointer.item before pointer reset in pointerup and check pointerId; original PDF/TXT preserved"
+  ],
+  "rights": "Screenshots are reference-study illustrations, not reusable product assets or a license for depicted artwork/logos/fonts/text. Original media and third-party source bundles are not included.",
+  "artifacts": [
+    {
+      "path": "Инструкция для Codex.pdf",
+      "bytes": 1088034,
+      "sha256": "94dcf99cd08c65236cf38b93ff889cc438c45c11f0326cfb322361c4fddac158"
+    },
+    {
+      "path": "Инструкция для Codex.txt",
+      "bytes": 58378,
+      "sha256": "d57d0d82249ca244ac9289199d35311aa990d1da371e1b9567b5bb43eed823f8"
+    },
+    {
+      "path": "Скриншоты/S01-01-desktop-idle.jpg",
+      "bytes": 44446,
+      "sha256": "913395be899692cdeb5e56dcb6a8c4bd478c3f38806bc1e1fff48ccd91ef8f27"
+    },
+    {
+      "path": "Скриншоты/S02-03-aave-hover.jpg",
+      "bytes": 46522,
+      "sha256": "62fc9c020bc67ddb3048c4814e429b220a5e5b8f329ac67dac2a516698a354fb"
+    },
+    {
+      "path": "Скриншоты/S03-04-family-hover.jpg",
+      "bytes": 44598,
+      "sha256": "488855d33fe77bd9f16271dd8135a93685db99c42d90fd2aa4017eb207c9dce1"
+    },
+    {
+      "path": "Скриншоты/S04-drag-1.jpg",
+      "bytes": 45843,
+      "sha256": "0359365d16aabab7dfc85293c586f78bd83e8b2726d8e98a5c7433d8d070eb48"
+    },
+    {
+      "path": "Скриншоты/S05-drag-4.jpg",
+      "bytes": 42717,
+      "sha256": "3ec08e8b3024218702b8fc7f29d1c1724924ae3cb6470a6793ad7d71361884b8"
+    },
+    {
+      "path": "Скриншоты/S06-02-aave-open.jpg",
+      "bytes": 71015,
+      "sha256": "2409c79633b5b0f64354dd534ef96b70634d92a05f5c9a1620775b09368f5404"
+    },
+    {
+      "path": "Скриншоты/S07-19-family-open.jpg",
+      "bytes": 66880,
+      "sha256": "d741d475c2742ff514ebf27bd619bcd729a0130103afd5ab71dbad0b151bd69b"
+    },
+    {
+      "path": "Скриншоты/S08-07-lens-open.jpg",
+      "bytes": 64594,
+      "sha256": "076f2cd53a782a9ab03ce985982c8cc9f0984780ffd47223a3d57f791df53b40"
+    },
+    {
+      "path": "Скриншоты/S09-08-gho-open.jpg",
+      "bytes": 50258,
+      "sha256": "2bcd10269a1314d75d1e21c964684e50b7bd2b04bcf092b715c4904fb56c51b5"
+    },
+    {
+      "path": "Скриншоты/S10-09-logo-menu.jpg",
+      "bytes": 45219,
+      "sha256": "46fdeba643a650275dcb08edce74d4f5b331e8437ab07c28d09734fa83a41ea2"
+    },
+    {
+      "path": "Скриншоты/S11-10-mobile-idle.jpg",
+      "bytes": 26736,
+      "sha256": "6eff0da8fefcc84f5e1eed90efdc0fb5591ac67725600f0ffbdb74bf1517a93e"
+    },
+    {
+      "path": "Скриншоты/S12-11-mobile-aave-peek.jpg",
+      "bytes": 33496,
+      "sha256": "d85e58ce4183bad999292409e4a7f1a59afbead083a92e23dac5a4a4195523a9"
+    },
+    {
+      "path": "Скриншоты/S13-12-mobile-sheet-scroll.jpg",
+      "bytes": 31824,
+      "sha256": "70729d68796b658d4dbbbefa70d4643412a0158fa2f03dad83d5651dd107f5e6"
+    },
+    {
+      "path": "Скриншоты/S14-13-mobile-sheet-end.jpg",
+      "bytes": 33267,
+      "sha256": "53ae21898ee7d6599c160a5fcddbee2c4a1247cd6fce6f1ca1178eeb1749b638"
+    },
+    {
+      "path": "Скриншоты/S15-14-mobile-lens-peek.jpg",
+      "bytes": 32451,
+      "sha256": "270a877dfc80d7cbf7c3facd841abc14ae3d872450a34728e480e57e8bb550ef"
+    },
+    {
+      "path": "Скриншоты/S16-15-blog-desktop.jpg",
+      "bytes": 41093,
+      "sha256": "e5db234c1dd5bfb64ac540743ac426fc2048fc5df39d6c8ffa59fbb4b9066905"
+    },
+    {
+      "path": "Скриншоты/S17-17-article.jpg",
+      "bytes": 73851,
+      "sha256": "9581e6d7a9381c435a53012e7f49207f49b150ac43d8dfc0fd41ddced4a77e91"
+    }
+  ]
+}

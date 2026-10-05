@@ -1,0 +1,4 @@
+*.pdf binary
+*.jpg binary
+# Preserve the original UTF-8/CRLF report and its SHA-256.
+*.txt -text whitespace=blank-at-eol,space-before-tab,cr-at-eol

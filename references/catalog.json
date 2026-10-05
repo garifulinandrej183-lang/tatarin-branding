@@ -189,6 +189,31 @@
       "implementation_site": null,
       "source_commit": null,
       "source_version": null
+    },
+    {
+      "id": "avara-selector",
+      "title": "Avara: интерактивный селектор, drag/snap и mobile sheet",
+      "reference_url": "https://avara.xyz/",
+      "tags": [
+        "avara",
+        "selector",
+        "drag",
+        "spring",
+        "hover",
+        "carousel",
+        "bottom-sheet",
+        "responsive",
+        "2d",
+        "селектор",
+        "перетаскивание",
+        "панель"
+      ],
+      "status": "analysis-only",
+      "analysis": "references/effects/avara-selector/analysis.md",
+      "prompt": "references/effects/avara-selector/codex-prompt.md",
+      "implementation_site": null,
+      "source_commit": null,
+      "source_version": null
     }
   ]
 }
