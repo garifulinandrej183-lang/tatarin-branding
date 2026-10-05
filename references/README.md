@@ -2,13 +2,15 @@
 
 Разборы сайтов-референсов, собственные применения, код эффектов и задания для Codex. Можно дать Codex название папки или URL каталога и попросить повторить механику в текущем сайте.
 
-Начните с [каталога](CATALOG.md). Для каждого эффекта есть README.md, analysis.md, codex-prompt.md, implementation.md и provenance.json. Пять эффектов содержат исходники собственного применения; Belen Jones пока содержит анализ и ТЗ.
+Начните с [каталога](CATALOG.md). Для каждого эффекта есть README.md, analysis.md, codex-prompt.md, implementation.md и provenance.json. Всего девять референсов: пять содержат исходники собственного применения; Belen Jones, Topology, Shopify Winter ’26 и Gregor Collienne содержат анализ и ТЗ без собственного применения.
 
 ## Как попросить Codex
 
 > Посмотри эффект pacome-spiral в https://github.com/garifulinandrej183-lang/tatarin-branding/tree/main/references . Прочитай README, analysis, codex-prompt и implementation этой папки. Изучи сохранённый код и повтори механику спирали в разделе работ моего текущего сайта. Используй мои карточки и текущий стек. Сохрани меню, контакты и другие работающие разделы. Проверь desktop, touch, паузу, обратное движение и reduced motion. Не копируй оформление и контент референса.
 
-Аналогично можно указать alphabet-symbols, podium-scroll, helloshivam-fluid, quartr-portrait или belen-gallery. Подробный рабочий порядок: [CODEX_GUIDE.md](CODEX_GUIDE.md).
+Аналогично можно указать alphabet-symbols, podium-scroll, helloshivam-fluid, quartr-portrait, belen-gallery, topology-relief, shopify-winter26 или gregor-photo-system. Подробный рабочий порядок: [CODEX_GUIDE.md](CODEX_GUIDE.md).
+
+Три последних разбора импортированы из `Topology.pdf` (26 страниц), `Winner Shopify.pdf` (19) и `gregorcollienne.pdf` (25). Полный текст с таблицами/формулами сохранён по страницам, ссылки из PDF восстановлены; оригинальные бинарные файлы и иллюстрации не включены. SHA-256 и границы доказательств записаны рядом с каждым разбором. Исторические команды внутри отчётов не являются текущим поручением: при использовании выбирайте только запрошенные механики, а `analysis-only` не считайте готовым проверенным кодом.
 
 ## Что означает наличие кода
 

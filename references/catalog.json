@@ -119,6 +119,76 @@
       "implementation_site": null,
       "source_commit": null,
       "source_version": null
+    },
+    {
+      "id": "topology-relief",
+      "title": "Topology: многослойный рельеф и scroll-сценарий",
+      "reference_url": "https://www.topology.vc/",
+      "tags": [
+        "relief",
+        "topology",
+        "scroll",
+        "spectral",
+        "fluid",
+        "pin",
+        "рельеф",
+        "радуга",
+        "маска"
+      ],
+      "status": "analysis-only",
+      "analysis": "references/effects/topology-relief/analysis.md",
+      "prompt": "references/effects/topology-relief/codex-prompt.md",
+      "implementation_site": null,
+      "source_commit": null,
+      "source_version": null
+    },
+    {
+      "id": "shopify-winter26",
+      "title": "Shopify Winter ’26: consent, hero и переходы сцен",
+      "reference_url": "https://www.shopify.com/editions/winter2026",
+      "tags": [
+        "shopify",
+        "winter2026",
+        "hero",
+        "consent",
+        "cookies",
+        "noise",
+        "finance",
+        "scene-transition",
+        "растворение",
+        "монеты"
+      ],
+      "status": "analysis-only",
+      "analysis": "references/effects/shopify-winter26/analysis.md",
+      "prompt": "references/effects/shopify-winter26/codex-prompt.md",
+      "implementation_site": null,
+      "source_commit": null,
+      "source_version": null
+    },
+    {
+      "id": "gregor-photo-system",
+      "title": "Gregor Collienne: Overview, GRID/LIST и фотогалереи",
+      "reference_url": "https://gregorcollienne.com/",
+      "tags": [
+        "gregor",
+        "collienne",
+        "photography",
+        "gallery",
+        "rail",
+        "index",
+        "grid",
+        "list",
+        "flip",
+        "галерея",
+        "фотографии",
+        "миниатюры"
+      ],
+      "status": "analysis-only",
+      "analysis": "references/effects/gregor-photo-system/analysis.md",
+      "prompt": "references/effects/gregor-photo-system/codex-prompt.md",
+      "implementation_site": null,
+      "source_commit": null,
+      "source_version": null
     }
   ]
 }

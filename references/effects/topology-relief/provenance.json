@@ -1,0 +1,65 @@
+{
+  "report_filename": "Topology.pdf",
+  "report_sha256": "a626235e2ac66df816651ef5b65a3ebff00fadde869c86bc9b26828b4d8ddec6",
+  "report_pages": 26,
+  "report_date": "2026-10-05",
+  "imported": "2026-10-05",
+  "reference_url": "https://www.topology.vc/",
+  "source_links": [
+    {
+      "page": 1,
+      "url": "https://www.topology.vc/"
+    },
+    {
+      "page": 26,
+      "url": "https://www.topology.vc/build/index-5uMogoGX.js"
+    },
+    {
+      "page": 26,
+      "url": "https://www.topology.vc/build/index-C5fuJDJE.css"
+    },
+    {
+      "page": 26,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_GUIDELINES.md"
+    },
+    {
+      "page": 26,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_PATTERNS.md"
+    },
+    {
+      "page": 26,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_REVIEW_CHECKLIST.md"
+    },
+    {
+      "page": 26,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/SPECIFICATION.md"
+    },
+    {
+      "page": 26,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/USAGE.md"
+    },
+    {
+      "page": 26,
+      "url": "https://threejs.org/docs/#api/en/objects/InstancedMesh"
+    },
+    {
+      "page": 26,
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/"
+    },
+    {
+      "page": 26,
+      "url": "https://github.com/darkroomengineering/lenis"
+    }
+  ],
+  "analysis_format": "Full page-numbered PDF text; repeated page furniture removed; table columns and code indentation retained in text blocks; PDF images and binaries excluded.",
+  "prompt_origin": "Archive adaptation of the supplied report for a future user-authorized target task; not executed during import.",
+  "implementation": null,
+  "verification": {
+    "archive": "All PDF pages rendered and visually inspected; page coverage, extracted text and source checksums checked.",
+    "reference_live_rechecked": false,
+    "target_implementation_tested": false,
+    "limitations": "Наблюдения и сверка кода заявлены в PDF за 2026-10-05. При импорте проверены страницы и извлечение, но живой сайт, исходные bundles, touch и FPS повторно не проверялись.",
+    "details": "See implementation.md and ../../VALIDATION.md"
+  },
+  "rights": "Reference artwork, photographs, logos, models and third-party bundles are not included or licensed for reuse by this import."
+}

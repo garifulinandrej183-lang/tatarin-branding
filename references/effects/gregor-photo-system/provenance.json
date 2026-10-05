@@ -1,0 +1,69 @@
+{
+  "report_filename": "gregorcollienne.pdf",
+  "report_sha256": "50f87e102d44a5032dc33a240ffc2896ddb2a4bd6c3f75e87cae46f736341607",
+  "report_pages": 25,
+  "report_date": "2026-10-05",
+  "imported": "2026-10-05",
+  "reference_url": "https://gregorcollienne.com/",
+  "source_links": [
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/work/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/work-list/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/focus/?rel=2"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/work/travel/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/work/portraits/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/work/wasserwarts/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/work/corporate-b2b/"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/wp-content/themes/fstheme/assets/css/main.css?ver=1.1.0"
+    },
+    {
+      "page": 25,
+      "url": "https://gregorcollienne.com/wp-content/themes/fstheme/assets/js/script.js?ver=1.1.0"
+    },
+    {
+      "page": 25,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_GUIDELINES.md"
+    },
+    {
+      "page": 25,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/tree/main/docs"
+    }
+  ],
+  "analysis_format": "Full page-numbered PDF text; repeated page furniture removed; table columns and code indentation retained in text blocks; PDF images and binaries excluded.",
+  "prompt_origin": "Archive adaptation of the supplied report for a future user-authorized target task; not executed during import.",
+  "implementation": null,
+  "verification": {
+    "archive": "All PDF pages rendered and visually inspected; page coverage, extracted text and source checksums checked.",
+    "reference_live_rechecked": false,
+    "target_implementation_tested": false,
+    "limitations": "PDF является полным разбором и уточняет общий scroll lag двух RAF-loop. Физический touch, многократный конец infinite-feed, FPS и полный accessibility audit в исходнике не проверены. Новый live-прогон при импорте не выполнялся.",
+    "details": "See implementation.md and ../../VALIDATION.md"
+  },
+  "rights": "Reference artwork, photographs, logos, models and third-party bundles are not included or licensed for reuse by this import."
+}

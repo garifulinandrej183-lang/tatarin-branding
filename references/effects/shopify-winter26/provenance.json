@@ -1,0 +1,81 @@
+{
+  "report_filename": "Winner Shopify.pdf",
+  "report_sha256": "6b191cd8f67fb802f79d6c5a5d5542bd3a6b16b2d6f1582fabe639e0dac198fe",
+  "report_pages": 19,
+  "report_date": "2026-10-05",
+  "imported": "2026-10-05",
+  "reference_url": "https://www.shopify.com/editions/winter2026",
+  "source_links": [
+    {
+      "page": 19,
+      "url": "https://www.shopify.com/editions/winter2026"
+    },
+    {
+      "page": 19,
+      "url": "https://www.shopify.com/editions/winter2026#sidekick"
+    },
+    {
+      "page": 19,
+      "url": "https://www.shopify.com/editions/winter2026#finance"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/oxygen-v2/47215/49013/102837/4586840/assets/ActiveConsentCompact-Z2BWK77P-DcHj6KkY.js"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/oxygen-v2/47215/49013/102837/4586840/assets/Background-B5YZqe5b.js"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/oxygen-v2/47215/49013/102837/4586840/assets/Effects-CCLcL7Wz.js"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/oxygen-v2/47215/49013/102837/4586840/assets/Butterflies-UGjVHz8Z.js"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/oxygen-v2/47215/49013/102837/4586840/assets/(_locale).editions.winter2026-CwarwMgn.js"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/oxygen-v2/47215/49013/102837/4586840/assets/tailwind-G-N6aznT.css"
+    },
+    {
+      "page": 19,
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/FinanceScene.theatre-project-state_7.json?v=1787919808"
+    },
+    {
+      "page": 19,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_GUIDELINES.md"
+    },
+    {
+      "page": 19,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_PATTERNS.md"
+    },
+    {
+      "page": 19,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/UI_REVIEW_CHECKLIST.md"
+    },
+    {
+      "page": 19,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/SPECIFICATION.md"
+    },
+    {
+      "page": 19,
+      "url": "https://github.com/garifulinandrej183-lang/tatarin-branding/blob/main/docs/USAGE.md"
+    }
+  ],
+  "analysis_format": "Full page-numbered PDF text; repeated page furniture removed; table columns and code indentation retained in text blocks; PDF images and binaries excluded.",
+  "prompt_origin": "Archive adaptation of the supplied report for a future user-authorized target task; not executed during import.",
+  "implementation": null,
+  "verification": {
+    "archive": "All PDF pages rendered and visually inspected; page coverage, extracted text and source checksums checked.",
+    "reference_live_rechecked": false,
+    "target_implementation_tested": false,
+    "limitations": "В PDF live cookies отсутствовали: их поведение установлено по публичному компоненту. Responsive Chrome не является физическим touch-тестом. Новый live/GPU/consent-прогон при импорте не выполнялся.",
+    "details": "See implementation.md and ../../VALIDATION.md"
+  },
+  "rights": "Reference artwork, photographs, logos, models and third-party bundles are not included or licensed for reuse by this import."
+}
