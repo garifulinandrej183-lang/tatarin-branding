@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="description" content="Андрей Гарифулин. Создаю сайты, приложения и визуальные решения.">
+  <title>tatarin — Андрей Гарифулин</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0b0d'/%3E%3Ctext x='20' y='49' font-family='Arial,sans-serif' font-size='54' font-weight='bold' fill='%23b6f24a'%3Et%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="./assets/portrait.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="./assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="./assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div id="portfolio">
+    <header class="site-header">
+      <div class="wordmark" aria-label="tatarin"><span class="wordmark-rest" aria-hidden="true">tatarin<span class="wordmark-dot">.</span></span><span class="wordmark-track" aria-hidden="true"><span class="wordmark-prefix"></span><span class="wordmark-name"></span><span class="wordmark-dot wordmark-typed-dot">.</span></span></div>
+      <div class="header-actions">
+        <button class="nav-button expand-button home-button" type="button" aria-disabled="true" aria-label="Главная"><img src="./assets/home.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">Главная</span></button>
+        <a class="nav-button expand-button telegram-link" href="https://t.me/tatarin_web" target="_blank" rel="noopener noreferrer" aria-label="Telegram @tatarin_web"><img src="./assets/telegram.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">Telegram</span></a>
+        <a class="nav-button expand-button" href="mailto:garifulinandrej183@gmail.com" aria-label="Написать на garifulinandrej183@gmail.com"><img src="./assets/email.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">Почта</span></a>
+        <a class="nav-button expand-button" href="https://www.instagram.com/madebyiiweb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @MADEBYIIWEB"><img src="./assets/instagram.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">Instagram</span></a>
+        <button class="nav-button expand-button" type="button" data-open-menu aria-label="Работы" aria-controls="works-dialog" aria-expanded="false"><img src="./assets/works.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">Работы</span></button>
+      </div>
+    </header>
+    <main id="main" class="hero">
+      <div class="scene">
+        <a class="contact-prompt" href="https://t.me/tatarin_web" target="_blank" rel="noopener noreferrer">Понравилось? Свяжись со мной!</a>
+        <img class="portrait-fallback" src="./assets/portrait.webp" width="1122" height="1402" alt="Портрет Андрея Гарифулина" decoding="async" fetchpriority="high">
+        <canvas class="portrait-canvas" aria-hidden="true"></canvas>
+        <div class="scene-tools">
+          <div class="signature-frame"><img class="signature" src="./assets/signature.png" width="1600" height="400" alt="made by tatarin"></div>
+          <div class="scene-controls">
+            <a class="scene-next" href="#about">Обо мне <span aria-hidden="true">↓</span></a>
+            <span class="scene-hint"><span class="mouse-hint">Нажми или перетащи</span><span class="touch-hint">Проведи по экрану или коснись его</span></span>
+            <button class="motion-button" type="button" data-motion aria-pressed="false" aria-label="Приостановить движение портрета">Пауза</button>
+          </div>
+        </div>
+      </div>
+      <section id="about" class="intro" aria-labelledby="headline">
+        <p class="name">Андрей <span class="name-surname">Гарифули<span class="name-last">н<img class="name-badge" src="./assets/verified-corner.png" width="1254" height="1254" alt=""></span></span></p>
+        <h1 id="headline"><span class="headline-line">Web.</span><span class="headline-line">Дизайн.</span><span class="headline-line headline-accent">Характер.</span></h1>
+        <p class="description">Создаю сайты, приложения<br class="desktop-break"> и визуальные решения.</p>
+        <button class="work-button" type="button" data-open-menu aria-controls="works-dialog" aria-expanded="false">Смотреть работы</button>
+      </section>
+      <section class="intro style-panel" aria-labelledby="style-headline">
+        <h2 id="style-headline" class="panel-headline"><span class="headline-line">UI.</span><span class="headline-line">Стиль.</span><span class="headline-line headline-accent">Вкус.</span></h2>
+        <p class="description">Разрабатываю свой визуальный стиль, дизайнерские решения и проекты «Made by tatarin». Станьте частью уникальной вселенной.</p>
+        <a class="work-button contact-button" href="https://t.me/tatarin_web" target="_blank" rel="noopener noreferrer">Связаться</a>
+      </section>
+      <div class="signature-frame mobile-signature"><img class="signature" src="./assets/signature.png" width="1600" height="400" alt="made by tatarin"></div>
+    </main>
+    <dialog id="works-dialog" class="works-dialog" data-open="false" aria-labelledby="works-heading">
+      <button class="close-button" type="button">Закрыть</button>
+      <div class="works-content">
+        <h2 id="works-heading">Работы</h2>
+        <a class="project-card" href="https://ru.anyalann.ru/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт Анны в новой вкладке">
+          <div class="project-cover">
+            <span class="project-category">Сайт</span>
+            <span class="project-title">Anya<br>Lann Studio</span>
+          </div>
+          <div class="project-info"><span>Сайт Анны</span><span class="project-address">ru.anyalann.ru</span></div>
+          <span class="project-action">Открыть сайт</span>
+        </a>
+      </div>
+    </dialog>
+    <span class="live-region" aria-live="polite"></span>
+  </div>
+</body>
+</html>

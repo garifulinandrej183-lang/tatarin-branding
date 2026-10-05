@@ -1,0 +1,412 @@
+{
+  "imported": "2026-10-05",
+  "note": "Listed code copied byte-for-byte. Media, hosting manifests, auth helpers, credentials and vendored libraries excluded. Documentation and package.json wrappers authored for this archive.",
+  "files": [
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/fluid/controller.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/fluid/controller.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "750d5afba34539a2b5b98654b546173217e00960c7163ea5564e1110feb16814"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/fluid/portrait-scene.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/fluid/portrait-scene.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "b65d4214bea40680227a16cb612fa6611e51359f63a86546bcdbbd6ba5084d74"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/fluid/portrait-shader.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/fluid/portrait-shader.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "27a6d5918521409ed4eafe777804d0e7323cbf71f333a9efad902ba9a0db5f8a"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/fluid/renderer.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/fluid/renderer.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "a877cbad0a8e0b1fb4a5968680b811290c374d38e0ce0f36aad3aedc3c621ad1"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/fluid/shaders.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/fluid/shaders.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "ba32d8c49bb87f65bcbcf5711dd3220daa13bcce41c2096b86fc3fdd92d6587a"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/src/motion/motion-math.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/motion/motion-math.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "3fc8092820c9627a4482985e4680fc08c0d0f3b8edfb0f9fdb1278e529014ef7"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/src/motion/motion-renderer.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/motion/motion-renderer.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "fb768f150d71508d566e80ab5c58f5327e6b47758ec710fea52fa8854c4f629f"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/src/motion/motion-scene.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/motion/motion-scene.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "a7855b61d2ef6d5f75041c1f0d4445e3b7841bcfd86c9a0f68e45dc95502aa3c"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/src/motion/motion-signature.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/motion/motion-signature.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "47098188b361acff6a137157795e06813e9b7ab763f894f7d7a90e6abd411927"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/src/spiral/spiral-art.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/spiral/spiral-art.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "03b28ce792c61e796e5097d484c2add520227b60898567d85994aa439a9c8928"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/src/spiral/spiral-scene.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/spiral/spiral-scene.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "faf7751ccb840b700649ce742cfdbf074ae97996bd86718f3582151809c62e83"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/src/spiral/spiral-software.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/spiral/spiral-software.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "71b440e6e912aa5f53ae46f82dca30dbfe5a63932857236cb1198cf2dfa2ac39"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/styles/hero.css",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/styles/hero.css",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "dd6ad1370df9cbb641c881c7a680a064cc8d1c4e7a4c814b58ae7cf5a971809c"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/styles/responsive.css",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/styles/responsive.css",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "067e1097b317b09755e60fb34e5e29154f24d2c9ade5624d46f3da2d95f4cb26"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/src/components/hero.html",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/components/hero.html",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "c2ac53ae663f81739b72a1b7b1990b63561744236dbf05703b55783f8d51b5d7"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/tests/fluid-controller.test.mjs",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "tests/fluid-controller.test.mjs",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "e18ea49e6d784ec750d71a5a362d2003a4fa2c07b0ed1f8c646378bf042bbcdc"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/tests/portrait-scene.test.mjs",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "tests/portrait-scene.test.mjs",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "3a072ac02cb1351da115d8928e7b35d0e4903af0d9698a9a158ed2a58fe8298a"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/scripts/project.mjs",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "scripts/project.mjs",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "46e52a4af9602bbf1b915a189f62b87c91c0dd26b971e8d182a74967ce36174d"
+    },
+    {
+      "path": "references/effects/helloshivam-fluid/code/portable/LICENSE-fluid.txt",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "LICENSE-fluid.txt",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "1be448ae1212de2bee77b4cf851ab0acea0a7f7f32d21cd73095dd94dc173f66"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/src/motion.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/motion.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "9597f86cf738dea46917a7401c022960ddd28c1ccc366996e71fbe23985ad717"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/src/styles/motion.css",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/styles/motion.css",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "88b5f49326437c7c3116b6639c036dc362aa21426ba12b502d87fc8d4f9fb093"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/motion.html",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "motion.html",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "55e8f9e29be524563b8016e29508bee15f40b386c9c5ab2dc4d1ca56220d67d6"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/tests/motion-engine.test.mjs",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "tests/motion-engine.test.mjs",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "6dec3f0d1a949511062412d25dc7183219f0f2d1b308907fd0456161f1831fb1"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/portable/scripts/project.mjs",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "scripts/project.mjs",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "46e52a4af9602bbf1b915a189f62b87c91c0dd26b971e8d182a74967ce36174d"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/src/spiral.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/spiral.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "cde651bfd1c8ee1009f133d1ed6a952b85d7cc0f3a2720e493d59c9d0f9a6adf"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/src/profile-visit.js",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/profile-visit.js",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "33026ee529bd048f62c4e0e1aa7f318a8463a5073fa07444f75764d3fe9233b0"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/src/styles/spiral.css",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "src/styles/spiral.css",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "e474ca8052db4486afb7cf797dd458bd534d955f7bb0e7d1c0b71498e7f9f950"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/works.html",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "works.html",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "a23c188b7c50c55bc2d8563220f25582bc7f08dc9ee425410462f0f74825de8b"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/portable/LICENSE-Three.txt",
+      "source_site": "andrei-tatarin-fluid",
+      "source_path": "LICENSE-Three.txt",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/lib/motion-math.ts",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "lib/motion-math.ts",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "fb009d2b345e58562b7d42d0bb1d877b1ee8b508ad42916d73df0e107f515769"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/lib/motion-scene.ts",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "lib/motion-scene.ts",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "735b44f05a0be88afc3ad4c6236a4afc9e9d8f9a68b2bfbaea93d580e0dafe1a"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/lib/motion-renderer.ts",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "lib/motion-renderer.ts",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "3fdd55ad3688814d236bc3287471515037ae631d4743ba0c933a33dfe378aea6"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/lib/motion-signature.ts",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "lib/motion-signature.ts",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "478d8459ab6bef8958dea8c167621f1fa2189491221cbce8019febc5b7921b49"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/components/motion-playground.tsx",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "components/motion-playground.tsx",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "49954a6573fa360eb030681eb4941cffcee3b88a8c4342e11c4fce04c1476d3e"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/app/globals.css",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "app/globals.css",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "7e1bbf0a38d2216deeeb2f49c0bbfc6ee9b60f97084b49099bd3bc9bc6b61223"
+    },
+    {
+      "path": "references/effects/alphabet-symbols/code/snapshot/scripts/check-motion.mjs",
+      "source_site": "tatarin-motion-lab",
+      "source_path": "scripts/check-motion.mjs",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "sha256": "c3a97adc86c114988ba533bf1229a7651dc25801f3c19bd628ff14a52a3431a0"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/lib/spiral-art.ts",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "lib/spiral-art.ts",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "9b2b71ba6240183fd1acb28cf7b1b0140d61c8c38cdffbc85456772bdc9c9b43"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/lib/spiral-scene.ts",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "lib/spiral-scene.ts",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "0d8286538440b3175bb8c3886f24c0ad081ef146057333741d9a9ca773fca560"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/lib/spiral-software.ts",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "lib/spiral-software.ts",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "50297645c62ebd820efb4d097a777f11aca0375d37567ab8e1fd0b5e9b5a1d2e"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/components/spiral-gallery.tsx",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "components/spiral-gallery.tsx",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "92ea9b605aab3e7fd12adb9fc7aa4a2affa8bc68b6e821e64b36006e46fd46fc"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/components/animated-wordmark.tsx",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "components/animated-wordmark.tsx",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "dba3311fa0e621ad73bb3737ab114371fadf900f917ecb723f24e538387cc959"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/components/site-navigation.tsx",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "components/site-navigation.tsx",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "b6bbd799026c45f86e80c09b1123888f61b76a1ad6a2d01cbdd613bdd1399696"
+    },
+    {
+      "path": "references/effects/pacome-spiral/code/snapshot/app/globals.css",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "app/globals.css",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "0f75ea803518d20599b5e8112c9fe18782660d0ae4a45928d8f5ee3443537905"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/dist/index.html",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/index.html",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "6ed7e6452d0bf86f79718bf9e05e7a79ab78653111e11418bfa9b077372f6396"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/dist/style.css",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/style.css",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "91015fbcff9a3d0f10da72708e8757a907702dda20db14978ec1dc0c08f89a10"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/dist/motion.js",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/motion.js",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "feeeddbd070dbca4182c92a396291d3f05c5f5e1359205e28a7a07677241d141"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/dist/flower.js",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/flower.js",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "eb9e11fe4cc7d1f1e163ca55eec8019863bcffdb8d500450e5973f180970beb0"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/dist/menu.js",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/menu.js",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "83e2ee4e993bdd9430b08ac32bbdeba76aa56211d82744459fa9671902c6c88f"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/dist/wordmark.js",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/wordmark.js",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "2f4ff148db3eb18ef164bca306a35e900ffc9a87e3f4e317ad23b8c3b389f495"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/scripts/check-motion.cjs",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "scripts/check-motion.cjs",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "49f71ff816132e80b599a2dc5ef36708d3243236ef1166c302ca4eb13bc2e66e"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/scripts/check-wordmark.cjs",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "scripts/check-wordmark.cjs",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "83cc5922ac75344ad92eddd4ac4240fc7adf97b98fef3ad37b97d90e91d62bc6"
+    },
+    {
+      "path": "references/effects/podium-scroll/code/snapshot/scripts/check-menu.cjs",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "scripts/check-menu.cjs",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "6209f0c66f557619c5a660caa39cf6222b6daabe099c97a238174fc350cceadf"
+    },
+    {
+      "path": "references/effects/quartr-portrait/code/snapshot/dist/index.html",
+      "source_site": "tatarin-portfolio",
+      "source_path": "dist/index.html",
+      "source_commit": "a06141cfc40b4204be14b140323f829a05bc7753",
+      "sha256": "eecc0dfcd5b8c6bcfae664bad2a123fb08abfa790752efbb4e61fdc7567594ad"
+    },
+    {
+      "path": "references/effects/quartr-portrait/code/snapshot/dist/assets/site.js",
+      "source_site": "tatarin-portfolio",
+      "source_path": "dist/assets/site.js",
+      "source_commit": "a06141cfc40b4204be14b140323f829a05bc7753",
+      "sha256": "2327ad64b0d03a295a52ab466d072cd184de416e0a40806717c8efe8e086dfa9"
+    },
+    {
+      "path": "references/effects/quartr-portrait/code/snapshot/dist/assets/site.css",
+      "source_site": "tatarin-portfolio",
+      "source_path": "dist/assets/site.css",
+      "source_commit": "a06141cfc40b4204be14b140323f829a05bc7753",
+      "sha256": "ad0d7a21ac55e3209ae3c7c4cc586d70421164285d5f8558b3269efe0eb8ab29"
+    },
+    {
+      "path": "references/patterns/code/tatarin-spiral-lab/animated-wordmark.tsx",
+      "source_site": "tatarin-spiral-lab",
+      "source_path": "components/animated-wordmark.tsx",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "sha256": "dba3311fa0e621ad73bb3737ab114371fadf900f917ecb723f24e538387cc959"
+    },
+    {
+      "path": "references/patterns/code/bloom-boutique-concept/wordmark.js",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/wordmark.js",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "2f4ff148db3eb18ef164bca306a35e900ffc9a87e3f4e317ad23b8c3b389f495"
+    },
+    {
+      "path": "references/patterns/code/bloom-boutique-concept/menu.js",
+      "source_site": "bloom-boutique-concept",
+      "source_path": "dist/menu.js",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "sha256": "83e2ee4e993bdd9430b08ac32bbdeba76aa56211d82744459fa9671902c6c88f"
+    }
+  ]
+}

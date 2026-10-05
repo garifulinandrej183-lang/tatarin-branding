@@ -47,3 +47,10 @@ The canonical entry point remains [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md)
 ## Version
 
 Current branding specification: `1.0.0`
+
+
+## Website reference effects
+
+Reusable motion studies, applied source snapshots and Codex transfer instructions: [references/README.md](references/README.md).
+
+Start with [references/CATALOG.md](references/CATALOG.md), then read the chosen effect's analysis, prompt and implementation notes. Verified code checks and visual-validation limits are recorded separately.

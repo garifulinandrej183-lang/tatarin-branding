@@ -1,0 +1,140 @@
+@media(min-width:1800px) {
+  .hero { min-height:100svh }
+  .site-header { font-size:2rem }
+  .works-page-header { min-height:0; }
+}
+
+@media(max-width:850px) {
+  .site-header {
+    grid-template-columns:1fr 1fr;
+    gap:28px 24px;
+    font-size:1.5rem;
+    padding-top:28px
+  }
+  .header-year {
+    grid-column:2;
+    grid-row:2;
+    font-size:1.125rem;
+    align-self:center
+  }
+  .site-header nav {
+    grid-column:1;
+    grid-row:2;
+    font-size:1.125rem
+  }
+  .hero { min-height:max(620px,100svh) }
+  .work-cover { --cover-ratio:1.6 }
+  .works { padding-top:64px }
+  .cover-wordmark { font-size:clamp(3rem,8.5vw,5rem) }
+}
+
+@media(max-width:540px) {
+  :root { --gutter:max(16px, env(safe-area-inset-left)) }
+  .works .section-heading h1 {
+    font-size:clamp(1.35rem,7vw,1.75rem);
+    overflow-wrap:anywhere
+  }
+  .hero-portrait {
+    width:min(130vw,620px);
+    height:80%;
+  }
+  .hero-word { font-size:clamp(18px,5vw,28px); }
+  .hero-word[data-word="ui"] { left:max(24px,7%); top:35%; }
+  .hero-word[data-word="design"] { left:auto; right:max(24px,7%); top:31%; }
+  .hero-word[data-word="taste"] { left:max(24px,7%); top:63%; }
+  .hero-word[data-word="style"] { left:auto; right:max(24px,7%); top:60%; }
+  .hero-word[data-word="web"] { left:48%; top:78%; }
+  .works { padding:52px var(--gutter) 48px }
+  .section-heading { margin-bottom:24px }
+  .work-cover {
+    grid-template-columns:.72fr 1fr;
+    --cover-ratio:1.04
+  }
+  .cover-copy { padding:24px 18px }
+  .cover-wordmark { font-size:clamp(2.25rem,10.6vw,4rem) }
+  .cover-studio {
+    font-size:.75rem;
+    letter-spacing:.18em;
+    margin-top:20px
+  }
+  .cover-line {
+    font-size:.75rem;
+    line-height:1.45;
+    margin-top:auto;
+    padding-top:24px
+  }
+  .work-caption {
+    gap:16px;
+    padding-top:20px
+  }
+  .work-caption p,.work-action { font-size:.875rem }
+  .work-action { padding-top:2px }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto }
+  *,*::before,*::after { transition:none!important }
+}
+
+@media(max-width:767px), (max-width:1000px) and (max-height:540px) and (orientation:landscape) {
+  :root { --gutter:max(16px, env(safe-area-inset-left)) }
+  .hero { height:100svh; min-height:100svh; touch-action:none }
+  .site-header {
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    grid-template-rows:auto;
+    align-items:center;
+    gap:12px;
+    padding:calc(16px + env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 16px max(16px, env(safe-area-inset-left));
+    font-size:clamp(.875rem,4vw,1.125rem);
+    line-height:1.2
+  }
+  .site-header h1,.site-header .specialty { align-self:center; text-align:center }
+  .hero .site-header nav,.hero .header-year { display:none }
+  .interaction-hint { margin:0 }
+  .hero-bottom {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    align-items:stretch;
+    gap:12px;
+    padding:16px max(16px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+    font-size:clamp(.8125rem,3.6vw,.9375rem);
+    line-height:1.4
+  }
+  .hero-bottom .text-link {
+    width:100%; min-height:44px; margin:0; padding:8px 0;
+    align-self:stretch; justify-content:center; text-align:center; overflow-wrap:anywhere; touch-action:manipulation;
+    font-size:inherit; line-height:inherit
+  }
+  .motion-toggle {
+    width:100%; min-height:44px; margin:0; padding:8px 0;
+    display:flex; justify-content:center; align-items:center;
+    justify-self:stretch; align-self:stretch; text-align:center; overflow-wrap:anywhere; touch-action:manipulation;
+    font-size:inherit; line-height:inherit
+  }
+  .works-page-header {
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    grid-template-rows:auto auto;
+    align-items:center;
+    gap:12px;
+    padding:calc(16px + env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 16px max(16px, env(safe-area-inset-left));
+    font-size:clamp(.875rem,4vw,1.125rem)
+  }
+  .works-page-header .brand,.works-page-header .specialty { text-align:center }
+  .works-page-header nav { grid-column:1 / -1; justify-content:center; font-size:.875rem }
+  .works-page-header .header-year { display:none }
+  .works-page-header .text-link { margin:0; padding-block:8px; touch-action:manipulation }
+  .works {
+    padding-inline-start:max(16px, env(safe-area-inset-left));
+    padding-inline-end:max(16px, env(safe-area-inset-right));
+    padding-bottom:calc(48px + env(safe-area-inset-bottom))
+  }
+}
+
+@media(max-width:767px) and (orientation:landscape), (max-width:1000px) and (max-height:540px) and (orientation:landscape) {
+  .site-header,.works-page-header {
+    padding-top:calc(8px + env(safe-area-inset-top));
+    padding-bottom:8px;
+    font-size:clamp(.8125rem,3.4vw,1rem)
+  }
+  .hero-bottom { padding-top:8px }
+}

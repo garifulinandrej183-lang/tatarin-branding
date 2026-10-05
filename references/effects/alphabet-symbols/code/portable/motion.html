@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101211">
+  <meta name="description" content="Интерактивная композиция: двигайте символы, меняйте кольца и создавайте новые сочетания.">
+  <title>Форма в движении · tatarin</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/motion-favicon.svg">
+  <link rel="stylesheet" href="./src/styles/motion.css">
+  <script type="module" src="./src/motion.js"></script>
+  <!-- deployment:metadata -->
+</head>
+<body>
+  <main class="playground">
+    <header class="topbar">
+      <a class="wordmark" href="./index.html" aria-label="На главную">tatarin<span aria-hidden="true">.</span></a>
+      <div class="topbar-controls">
+        <span class="edition">Motion study / 01</span>
+        <button class="help-trigger" type="button" data-help-open aria-label="Как взаимодействовать с композицией">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        </button>
+      </div>
+    </header>
+    <section class="stage" aria-label="Интерактивная композиция из колец и символов">
+      <div class="scene-surface">
+        <svg class="static-composition" aria-hidden="true">
+          <defs>
+            <pattern id="glyph-field" x="0" y="0" width="154" height="88" patternUnits="userSpaceOnUse">
+              <text x="11" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="33" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="55" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">(</text><text x="77" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="99" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="121" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">{}</text><text x="143" y="16" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text>
+              <text x="11" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">[</text><text x="33" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="55" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="77" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">.</text><text x="99" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="121" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">{</text><text x="143" y="38" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text>
+              <text x="11" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="33" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">;</text><text x="55" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="77" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">&gt;</text><text x="99" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="121" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="143" y="60" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">=</text>
+              <text x="11" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="33" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">i</text><text x="55" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="77" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">0</text><text x="99" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">#</text><text x="121" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">1</text><text x="143" y="82" text-anchor="middle" font-size="12" font-family="monospace" fill="#b1bca9" opacity=".42">a</text>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#glyph-field)"/>
+          <svg data-shapes class="static-shapes" viewBox="0 0 1396 1460">
+            <g fill="none" stroke-width="70">
+              <circle data-ring="0" cx="660" cy="745" r="475" stroke="#d0ef63"/>
+              <circle data-ring="1" cx="825" cy="580" r="365" stroke="#a4d3ac"/>
+              <circle data-ring="2" cx="820" cy="840" r="520" stroke="#a5d3e3"/>
+            </g>
+            <circle data-disc cx="750" cy="670" r="104" fill="#e5e9d6"/>
+          </svg>
+        </svg>
+        <canvas class="scene-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="scene-caption">Композиция / <span data-generation>01</span></div>
+      <span class="pause-label" data-pause-label hidden></span>
+      <div class="editorial">
+        <h1>Форма<em>.</em><br>В движении.</h1>
+        <p>Каждое движение<br>меняет композицию.</p>
+      </div>
+      <noscript><p class="noscript-info">Для взаимодействия включи JavaScript.</p></noscript>
+    </section>
+    <footer class="bottom-bar">
+      <div class="hint hint-desktop">Двигай курсор. Потяни за кольцо.<span>Нажми на поле — начни заново.</span></div>
+      <div class="hint hint-touch" data-touch-hint>Проводи пальцем. Потяни за кольцо.<span>Выключи ладонь, чтобы прокручивать.</span></div>
+      <div class="scene-controls" aria-label="Управление композицией">
+        <button class="control control-pause" type="button" data-pause aria-pressed="false">
+          <svg data-pause-icon aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg><span data-pause-text>Пауза</span>
+        </button>
+        <button class="control touch-control" type="button" data-touch aria-label="Выключить перетягивание" aria-pressed="true">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 13V5a2 2 0 0 1 4 0v7-2a2 2 0 0 1 4 0v2-1a2 2 0 0 1 4 0v5c0 4-2 6-6 6h-2c-2 0-3-1-4-2l-4-4a2 2 0 0 1 3-3z"/><path d="M8 13v-1a2 2 0 0 0-4 0v1"/></svg>
+        </button>
+        <button class="control control-primary" type="button" data-refresh>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.64 9a7 7 0 0 1 11.55-2.6L20 12M4 12l2.81 5.6A7 7 0 0 0 18.36 15"/></svg><span>Обновить</span>
+        </button>
+      </div>
+      <div class="signature-wrap"><img class="signature" src="./assets/motion-made-by-tatarin-light.svg" alt="made by tatarin" width="200" height="50"></div>
+    </footer>
+    <output class="sr-only" data-announcement aria-live="polite" aria-atomic="true"></output>
+  </main>
+  <dialog class="help-dialog" data-help-dialog aria-labelledby="help-title" aria-describedby="help-description">
+    <button class="help-close" type="button" data-help-close aria-label="Закрыть подсказку">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <header class="help-header">
+      <h2 id="help-title">Попробуй менять форму.</h2>
+      <p id="help-description">Композиция реагирует на твои движения.</p>
+    </header>
+    <div class="help-actions">
+      <div class="help-row"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3 19 12l-6 1-3 6z"/><path d="m13 13 4 7"/></svg><div><strong>Двигай курсор или палец</strong><p>Символы расходятся, захватывают цвет и возвращаются на место.</p></div></div>
+      <div class="help-row"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M3 16v3a2 2 0 0 0 2 2h3"/><path d="M8 8h8v8H8z"/></svg><div><strong>Потяни за обод</strong><p>Кольцо изменит размер и положение. На телефоне просто тяни его пальцем.</p></div></div>
+      <div class="help-row"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.64-6.36L21 8"/><path d="M21 3v5h-5"/></svg><div><strong>Нажми на свободную область</strong><p>Появится новая композиция. Кнопка «Обновить» делает то же самое.</p></div></div>
+      <div class="help-row"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg><div><strong>Остановись на понравившемся</strong><p>Пауза сохраняет текущий кадр. При уменьшении движения в настройках устройства сцена остаётся статичной.</p></div></div>
+    </div>
+  </dialog>
+</body>
+</html>

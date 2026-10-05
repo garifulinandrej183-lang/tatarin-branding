@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#174238">
+  <meta name="description" content="Bloom Boutique — авторские букеты, флористика и доставка цветов по Хабаровску. Цветы, которые говорят за вас.">
+  <title>Bloom Boutique — Цветы, которые говорят за вас</title>
+  <link rel="icon" type="image/svg+xml" href="assets/bloom-mark.svg">
+  <link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=8">
+  <script src="flower.js?v=5" defer></script>
+  <script src="motion.js?v=7" defer></script>
+  <script src="wordmark.js?v=6" defer></script>
+  <script src="menu.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Перейти к букетам</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Bloom Boutique — в начало"><span class="brand-track" aria-hidden="true"><span class="brand-text">bloom</span><span class="brand-dot">.</span></span><span class="brand-measure" aria-hidden="true">Нужны цветы?</span><span class="brand-measure" aria-hidden="true">bloom boutique</span></a>
+    <nav class="header-actions" aria-label="Основная навигация">
+      <button id="menu-toggle" class="nav-button expand-button menu-toggle" type="button" aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="site-menu" aria-expanded="false"><img src="assets/nav-menu.png" alt="" width="64" height="64"><span class="button-label" aria-hidden="true">Меню</span></button>
+      <a class="nav-button expand-button telegram-link" href="https://t.me/bloom_boutique_flowerskhv" target="_blank" rel="noopener noreferrer" aria-label="Telegram Bloom Boutique"><img src="assets/nav-telegram.png" alt="" width="64" height="64"><span class="button-label" aria-hidden="true">Telegram</span></a>
+      <a class="nav-button expand-button instagram-link" href="https://instagram.com/bloom_boutique_flowerskhv" target="_blank" rel="noopener noreferrer" aria-label="Instagram Bloom Boutique"><img src="assets/nav-instagram.png" alt="" width="64" height="64"><span class="button-label" aria-hidden="true">Instagram</span></a>
+      <a class="nav-button expand-button max-link" href="https://max.ru/u/f9LHodD0cOKG-xdUsFfYNspOh_hqoeU6qHgZWgVOsHhOsOIwuZkGSPa0Bq8" target="_blank" rel="noopener noreferrer" aria-label="MAX Bloom Boutique"><img src="assets/nav-max.png" alt="" width="64" height="64"><span class="button-label" aria-hidden="true">MAX</span></a>
+      <button id="motion-toggle" class="nav-button motion-toggle" type="button" aria-pressed="false" aria-label="Пауза" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4h2v12H6zm6 0h2v12h-2z"/></svg><span class="button-label" aria-hidden="true">Пауза</span></button>
+    </nav>
+  </header>
+  <dialog id="site-menu" class="menu-dialog" aria-labelledby="menu-title">
+    <div class="menu-sheet">
+      <div class="menu-heading"><h2 id="menu-title" class="menu-title">Меню</h2><button class="menu-close" type="button" aria-label="Закрыть меню" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <nav class="menu-links" aria-label="Разделы Bloom Boutique">
+        <a class="menu-item menu-item-primary" href="#work">Каталог</a>
+        <a class="menu-item" href="https://bloomboutique.ru/oformlenie-tsvetami/" target="_blank" rel="noopener noreferrer">Оформление цветами</a>
+        <a class="menu-item" href="https://bloomboutique.ru/delivery-and-payment/" target="_blank" rel="noopener noreferrer">Доставка и оплата</a>
+        <a class="menu-item" href="#boutique">О нас</a>
+        <a class="menu-item" href="https://bloomboutique.ru/for_business/" target="_blank" rel="noopener noreferrer">Компаниям</a>
+        <a class="menu-item" href="https://bloomboutique.ru/tsvetochnaya-podpiska/" target="_blank" rel="noopener noreferrer">Цветочная подписка</a>
+        <a class="menu-item" href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </dialog>
+  <main>
+    <section class="intro" id="top" aria-labelledby="hero-title">
+      <div class="stage">
+        <svg class="aperture" id="aperture" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="portal-soft" filterUnits="userSpaceOnUse" x="-.75" y="-.75" width="1.5" height="1.5"><feGaussianBlur stdDeviation=".0025"/></filter>
+            <mask id="portal" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" mask-type="luminance" x="-1" y="-1" width="1442" height="902">
+              <rect class="mask-field" x="-1" y="-1" width="1442" height="902" fill="black"/>
+              <path id="portal-hole" fill="white" fill-rule="evenodd" filter="url(#portal-soft)" transform="translate(720 415) scale(630 630)" d="M-0.02400,-0.45943C-0.02752,-0.45841 -0.03112,-0.45676 -0.03312,-0.45600C-0.03512,-0.45524 -0.03352,-0.45616 -0.03600,-0.45490C-0.03848,-0.45363 -0.04496,-0.45021 -0.04800,-0.44839C-0.05104,-0.44658 -0.05223,-0.44544 -0.05423,-0.44400C-0.05623,-0.44256 -0.05761,-0.44176 -0.06000,-0.43976C-0.06239,-0.43776 -0.06658,-0.43384 -0.06858,-0.43200C-0.07058,-0.43016 -0.07013,-0.43074 -0.07200,-0.42874C-0.07387,-0.42674 -0.07777,-0.42230 -0.07977,-0.42000C-0.08177,-0.41770 -0.08245,-0.41692 -0.08400,-0.41492C-0.08555,-0.41292 -0.08706,-0.41087 -0.08906,-0.40800C-0.09106,-0.40513 -0.09467,-0.39972 -0.09600,-0.39772C-0.09733,-0.39572 -0.09574,-0.39829 -0.09704,-0.39600C-0.09835,-0.39371 -0.10202,-0.38734 -0.10385,-0.38400C-0.10568,-0.38066 -0.10699,-0.37796 -0.10800,-0.37596C-0.10901,-0.37396 -0.10870,-0.37466 -0.10989,-0.37200C-0.11108,-0.36934 -0.11349,-0.36400 -0.11515,-0.36000C-0.11681,-0.35600 -0.11904,-0.35007 -0.11985,-0.34800C-0.12066,-0.34593 -0.11932,-0.34958 -0.12000,-0.34758C-0.12068,-0.34558 -0.12267,-0.33993 -0.12392,-0.33600C-0.12518,-0.33207 -0.12640,-0.32800 -0.12752,-0.32400C-0.12865,-0.32000 -0.12993,-0.31496 -0.13068,-0.31200C-0.13143,-0.30904 -0.13155,-0.30825 -0.13200,-0.30625C-0.13245,-0.30425 -0.13278,-0.30304 -0.13339,-0.30000C-0.13401,-0.29696 -0.13499,-0.29200 -0.13570,-0.28800C-0.13641,-0.28400 -0.13705,-0.28000 -0.13763,-0.27600C-0.13821,-0.27200 -0.13873,-0.26800 -0.13920,-0.26400C-0.13966,-0.26000 -0.14006,-0.25600 -0.14041,-0.25200C-0.14075,-0.24800 -0.14095,-0.24400 -0.14128,-0.24000C-0.14160,-0.23600 -0.14190,-0.23128 -0.14235,-0.22800C-0.14280,-0.22472 -0.14343,-0.22234 -0.14400,-0.22034C-0.14457,-0.21834 -0.14377,-0.21834 -0.14577,-0.21600C-0.14777,-0.21366 -0.15230,-0.20814 -0.15600,-0.20632C-0.15970,-0.20451 -0.16400,-0.20492 -0.16800,-0.20511C-0.17200,-0.20529 -0.17600,-0.20655 -0.18000,-0.20743C-0.18400,-0.20831 -0.18800,-0.20945 -0.19200,-0.21039C-0.19600,-0.21134 -0.20000,-0.21228 -0.20400,-0.21313C-0.20800,-0.21398 -0.21349,-0.21501 -0.21600,-0.21549C-0.21851,-0.21597 -0.21707,-0.21567 -0.21907,-0.21600C-0.22107,-0.21633 -0.22451,-0.21697 -0.22800,-0.21749C-0.23149,-0.21800 -0.23600,-0.21863 -0.24000,-0.21911C-0.24400,-0.21958 -0.24800,-0.22000 -0.25200,-0.22035C-0.25600,-0.22069 -0.26000,-0.22098 -0.26400,-0.22119C-0.26800,-0.22141 -0.27200,-0.22156 -0.27600,-0.22164C-0.28000,-0.22172 -0.28400,-0.22173 -0.28800,-0.22166C-0.29200,-0.22159 -0.29600,-0.22145 -0.30000,-0.22123C-0.30400,-0.22101 -0.30800,-0.22072 -0.31200,-0.22033C-0.31600,-0.21995 -0.32000,-0.21948 -0.32400,-0.21892C-0.32800,-0.21836 -0.33324,-0.21744 -0.33600,-0.21695C-0.33876,-0.21647 -0.33856,-0.21644 -0.34056,-0.21600C-0.34256,-0.21556 -0.34476,-0.21517 -0.34800,-0.21433C-0.35124,-0.21349 -0.35600,-0.21222 -0.36000,-0.21097C-0.36400,-0.20972 -0.36886,-0.20798 -0.37200,-0.20682C-0.37514,-0.20566 -0.37686,-0.20486 -0.37886,-0.20400C-0.38086,-0.20314 -0.38114,-0.20311 -0.38400,-0.20164C-0.38686,-0.20017 -0.39315,-0.19678 -0.39600,-0.19517C-0.39885,-0.19356 -0.39909,-0.19337 -0.40109,-0.19200C-0.40309,-0.19063 -0.40546,-0.18896 -0.40800,-0.18696C-0.41054,-0.18496 -0.41432,-0.18179 -0.41632,-0.18000C-0.41832,-0.17821 -0.41819,-0.17822 -0.42000,-0.17622C-0.42181,-0.17422 -0.42516,-0.17059 -0.42716,-0.16800C-0.42916,-0.16541 -0.43072,-0.16269 -0.43200,-0.16069C-0.43328,-0.15869 -0.43351,-0.15878 -0.43485,-0.15600C-0.43618,-0.15322 -0.43864,-0.14800 -0.44001,-0.14400C-0.44139,-0.14000 -0.44243,-0.13544 -0.44309,-0.13200C-0.44376,-0.12856 -0.44379,-0.12536 -0.44400,-0.12336C-0.44421,-0.12136 -0.44434,-0.12224 -0.44434,-0.12000C-0.44434,-0.11776 -0.44407,-0.11194 -0.44400,-0.10994C-0.44393,-0.10794 -0.44427,-0.11032 -0.44394,-0.10800C-0.44361,-0.10568 -0.44289,-0.10000 -0.44201,-0.09600C-0.44114,-0.09200 -0.44001,-0.08800 -0.43866,-0.08400C-0.43731,-0.08000 -0.43504,-0.07463 -0.43393,-0.07200C-0.43282,-0.06937 -0.43302,-0.07021 -0.43200,-0.06821C-0.43098,-0.06621 -0.42977,-0.06337 -0.42783,-0.06000C-0.42589,-0.05663 -0.42168,-0.05009 -0.42037,-0.04800C-0.41907,-0.04591 -0.42147,-0.04949 -0.42000,-0.04749C-0.41853,-0.04549 -0.41353,-0.03861 -0.41153,-0.03600C-0.40953,-0.03339 -0.40971,-0.03383 -0.40800,-0.03183C-0.40629,-0.02983 -0.40324,-0.02621 -0.40124,-0.02400C-0.39924,-0.02179 -0.39797,-0.02059 -0.39600,-0.01859C-0.39403,-0.01659 -0.39143,-0.01392 -0.38943,-0.01200C-0.38743,-0.01008 -0.38624,-0.00906 -0.38400,-0.00706C-0.38176,-0.00506 -0.37797,-0.00171 -0.37597,0.00000C-0.37397,0.00171 -0.37455,0.00121 -0.37200,0.00321C-0.36945,0.00521 -0.36268,0.01045 -0.36068,0.01200C-0.35868,0.01355 -0.36211,0.01102 -0.36000,0.01249C-0.35789,0.01396 -0.35080,0.01893 -0.34800,0.02085C-0.34520,0.02276 -0.34523,0.02272 -0.34323,0.02400C-0.34123,0.02528 -0.33920,0.02659 -0.33600,0.02852C-0.33280,0.03046 -0.32612,0.03436 -0.32400,0.03560C-0.32188,0.03685 -0.32529,0.03492 -0.32329,0.03600C-0.32129,0.03708 -0.31586,0.04006 -0.31200,0.04206C-0.30814,0.04406 -0.30210,0.04700 -0.30010,0.04800C-0.29810,0.04900 -0.30202,0.04713 -0.30000,0.04805C-0.29798,0.04897 -0.29200,0.05177 -0.28800,0.05352C-0.28400,0.05527 -0.27861,0.05749 -0.27600,0.05857C-0.27339,0.05965 -0.27434,0.05912 -0.27234,0.06000C-0.27034,0.06088 -0.26739,0.06207 -0.26400,0.06384C-0.26061,0.06560 -0.25434,0.06923 -0.25200,0.07059C-0.24966,0.07195 -0.25124,0.06976 -0.24996,0.07200C-0.24868,0.07424 -0.24484,0.08000 -0.24431,0.08400C-0.24377,0.08800 -0.24547,0.09245 -0.24676,0.09600C-0.24804,0.09955 -0.25090,0.10328 -0.25200,0.10528C-0.25310,0.10728 -0.25187,0.10555 -0.25336,0.10800C-0.25484,0.11045 -0.25913,0.11712 -0.26090,0.12000C-0.26267,0.12288 -0.26283,0.12325 -0.26400,0.12525C-0.26517,0.12725 -0.26619,0.12888 -0.26792,0.13200C-0.26966,0.13512 -0.27308,0.14148 -0.27442,0.14400C-0.27577,0.14652 -0.27500,0.14515 -0.27600,0.14715C-0.27700,0.14915 -0.27876,0.15252 -0.28041,0.15600C-0.28206,0.15948 -0.28463,0.16516 -0.28590,0.16800C-0.28716,0.17084 -0.28717,0.17105 -0.28800,0.17305C-0.28883,0.17505 -0.28966,0.17684 -0.29089,0.18000C-0.29212,0.18316 -0.29397,0.18800 -0.29539,0.19200C-0.29681,0.19600 -0.29862,0.20165 -0.29939,0.20400C-0.30016,0.20635 -0.29942,0.20412 -0.30000,0.20612C-0.30058,0.20812 -0.30190,0.21235 -0.30287,0.21600C-0.30385,0.21965 -0.30494,0.22400 -0.30584,0.22800C-0.30673,0.23200 -0.30754,0.23600 -0.30825,0.24000C-0.30897,0.24400 -0.30959,0.24800 -0.31010,0.25200C-0.31062,0.25600 -0.31104,0.26000 -0.31135,0.26400C-0.31165,0.26800 -0.31186,0.27200 -0.31193,0.27600C-0.31201,0.28000 -0.31198,0.28400 -0.31179,0.28800C-0.31161,0.29200 -0.31131,0.29600 -0.31084,0.30000C-0.31036,0.30400 -0.30976,0.30800 -0.30895,0.31200C-0.30814,0.31600 -0.30718,0.32000 -0.30598,0.32400C-0.30479,0.32800 -0.30275,0.33336 -0.30176,0.33600C-0.30076,0.33864 -0.30100,0.33786 -0.30000,0.33986C-0.29900,0.34186 -0.29774,0.34474 -0.29574,0.34800C-0.29374,0.35126 -0.28937,0.35742 -0.28800,0.35942C-0.28663,0.36142 -0.28953,0.35797 -0.28753,0.36000C-0.28553,0.36203 -0.27801,0.36958 -0.27600,0.37158C-0.27399,0.37358 -0.27746,0.37064 -0.27546,0.37200C-0.27346,0.37336 -0.26741,0.37771 -0.26400,0.37971C-0.26059,0.38171 -0.25701,0.38307 -0.25501,0.38400C-0.25301,0.38493 -0.25450,0.38449 -0.25200,0.38528C-0.24950,0.38608 -0.24400,0.38787 -0.24000,0.38877C-0.23600,0.38967 -0.23200,0.39026 -0.22800,0.39067C-0.22400,0.39108 -0.22000,0.39123 -0.21600,0.39122C-0.21200,0.39120 -0.20800,0.39096 -0.20400,0.39057C-0.20000,0.39018 -0.19600,0.38960 -0.19200,0.38886C-0.18800,0.38813 -0.18321,0.38700 -0.18000,0.38619C-0.17679,0.38538 -0.17472,0.38460 -0.17272,0.38400C-0.17072,0.38340 -0.17079,0.38358 -0.16800,0.38260C-0.16521,0.38163 -0.16000,0.37977 -0.15600,0.37815C-0.15200,0.37653 -0.14629,0.37391 -0.14400,0.37288C-0.14171,0.37186 -0.14426,0.37301 -0.14226,0.37200C-0.14026,0.37099 -0.13569,0.36881 -0.13200,0.36681C-0.12831,0.36481 -0.12212,0.36115 -0.12012,0.36000C-0.11812,0.35885 -0.12202,0.36122 -0.12000,0.35993C-0.11798,0.35864 -0.11101,0.35425 -0.10800,0.35226C-0.10499,0.35027 -0.10394,0.34941 -0.10194,0.34800C-0.09994,0.34659 -0.09867,0.34579 -0.09600,0.34379C-0.09333,0.34179 -0.08793,0.33755 -0.08593,0.33600C-0.08393,0.33445 -0.08632,0.33643 -0.08400,0.33449C-0.08168,0.33254 -0.07406,0.32607 -0.07200,0.32433C-0.06994,0.32258 -0.07364,0.32585 -0.07164,0.32400C-0.06964,0.32215 -0.06215,0.31525 -0.06000,0.31325C-0.05785,0.31125 -0.06072,0.31401 -0.05872,0.31200C-0.05672,0.30999 -0.04998,0.30320 -0.04800,0.30120C-0.04602,0.29920 -0.04887,0.30218 -0.04687,0.30000C-0.04487,0.29782 -0.03782,0.29009 -0.03600,0.28809C-0.03418,0.28609 -0.03762,0.29002 -0.03592,0.28800C-0.03422,0.28598 -0.02779,0.27837 -0.02581,0.27600C-0.02382,0.27363 -0.02596,0.27576 -0.02400,0.27376C-0.02204,0.27176 -0.01604,0.26598 -0.01404,0.26400C-0.01204,0.26202 -0.01434,0.26297 -0.01200,0.26190C-0.00966,0.26084 -0.00400,0.25763 0.00000,0.25762C0.00400,0.25762 0.00966,0.26081 0.01200,0.26188C0.01434,0.26294 0.01204,0.26202 0.01404,0.26400C0.01604,0.26598 0.02204,0.27176 0.02400,0.27376C0.02596,0.27576 0.02382,0.27363 0.02581,0.27600C0.02779,0.27837 0.03422,0.28598 0.03592,0.28800C0.03762,0.29002 0.03418,0.28609 0.03600,0.28809C0.03782,0.29009 0.04487,0.29782 0.04687,0.30000C0.04887,0.30218 0.04602,0.29920 0.04800,0.30120C0.04998,0.30320 0.05672,0.30999 0.05872,0.31200C0.06072,0.31401 0.05785,0.31125 0.06000,0.31325C0.06215,0.31525 0.06964,0.32215 0.07164,0.32400C0.07364,0.32585 0.06994,0.32258 0.07200,0.32433C0.07406,0.32607 0.08168,0.33254 0.08400,0.33449C0.08632,0.33643 0.08393,0.33445 0.08593,0.33600C0.08793,0.33755 0.09333,0.34179 0.09600,0.34379C0.09867,0.34579 0.09994,0.34659 0.10194,0.34800C0.10394,0.34941 0.10499,0.35027 0.10800,0.35226C0.11101,0.35425 0.11798,0.35864 0.12000,0.35993C0.12202,0.36122 0.11812,0.35885 0.12012,0.36000C0.12212,0.36115 0.12831,0.36481 0.13200,0.36681C0.13569,0.36881 0.14026,0.37099 0.14226,0.37200C0.14426,0.37301 0.14171,0.37186 0.14400,0.37288C0.14629,0.37391 0.15200,0.37653 0.15600,0.37815C0.16000,0.37977 0.16521,0.38163 0.16800,0.38260C0.17079,0.38358 0.17072,0.38340 0.17272,0.38400C0.17472,0.38460 0.17679,0.38538 0.18000,0.38619C0.18321,0.38700 0.18800,0.38813 0.19200,0.38886C0.19600,0.38960 0.20000,0.39018 0.20400,0.39057C0.20800,0.39096 0.21200,0.39120 0.21600,0.39122C0.22000,0.39123 0.22400,0.39108 0.22800,0.39067C0.23200,0.39026 0.23600,0.38967 0.24000,0.38877C0.24400,0.38787 0.24950,0.38608 0.25200,0.38528C0.25450,0.38449 0.25301,0.38493 0.25501,0.38400C0.25701,0.38307 0.26059,0.38171 0.26400,0.37971C0.26741,0.37771 0.27346,0.37336 0.27546,0.37200C0.27746,0.37064 0.27399,0.37358 0.27600,0.37158C0.27801,0.36958 0.28553,0.36203 0.28753,0.36000C0.28953,0.35797 0.28663,0.36142 0.28800,0.35942C0.28937,0.35742 0.29374,0.35126 0.29574,0.34800C0.29774,0.34474 0.29900,0.34186 0.30000,0.33986C0.30100,0.33786 0.30076,0.33864 0.30176,0.33600C0.30275,0.33336 0.30479,0.32800 0.30598,0.32400C0.30718,0.32000 0.30814,0.31600 0.30895,0.31200C0.30976,0.30800 0.31036,0.30400 0.31084,0.30000C0.31131,0.29600 0.31161,0.29200 0.31179,0.28800C0.31198,0.28400 0.31201,0.28000 0.31193,0.27600C0.31186,0.27200 0.31165,0.26800 0.31135,0.26400C0.31104,0.26000 0.31062,0.25600 0.31010,0.25200C0.30959,0.24800 0.30897,0.24400 0.30825,0.24000C0.30754,0.23600 0.30673,0.23200 0.30584,0.22800C0.30494,0.22400 0.30385,0.21965 0.30287,0.21600C0.30190,0.21235 0.30058,0.20812 0.30000,0.20612C0.29942,0.20412 0.30016,0.20635 0.29939,0.20400C0.29862,0.20165 0.29681,0.19600 0.29539,0.19200C0.29397,0.18800 0.29212,0.18316 0.29089,0.18000C0.28966,0.17684 0.28883,0.17505 0.28800,0.17305C0.28717,0.17105 0.28716,0.17084 0.28590,0.16800C0.28463,0.16516 0.28206,0.15948 0.28041,0.15600C0.27876,0.15252 0.27700,0.14915 0.27600,0.14715C0.27500,0.14515 0.27577,0.14652 0.27442,0.14400C0.27308,0.14148 0.26966,0.13512 0.26792,0.13200C0.26619,0.12888 0.26517,0.12725 0.26400,0.12525C0.26283,0.12325 0.26267,0.12288 0.26090,0.12000C0.25913,0.11712 0.25484,0.11045 0.25336,0.10800C0.25187,0.10555 0.25309,0.10728 0.25200,0.10528C0.25091,0.10328 0.24807,0.09955 0.24679,0.09600C0.24551,0.09245 0.24378,0.08800 0.24431,0.08400C0.24484,0.08000 0.24867,0.07424 0.24996,0.07200C0.25124,0.06976 0.24966,0.07194 0.25200,0.07058C0.25434,0.06922 0.26061,0.06560 0.26400,0.06384C0.26739,0.06208 0.27034,0.06088 0.27234,0.06000C0.27434,0.05912 0.27339,0.05965 0.27600,0.05857C0.27861,0.05749 0.28400,0.05527 0.28800,0.05352C0.29200,0.05177 0.29798,0.04897 0.30000,0.04805C0.30202,0.04713 0.29810,0.04900 0.30010,0.04800C0.30210,0.04700 0.30814,0.04406 0.31200,0.04206C0.31586,0.04006 0.32129,0.03708 0.32329,0.03600C0.32529,0.03492 0.32188,0.03685 0.32400,0.03560C0.32612,0.03436 0.33280,0.03046 0.33600,0.02852C0.33920,0.02659 0.34123,0.02528 0.34323,0.02400C0.34523,0.02272 0.34520,0.02276 0.34800,0.02085C0.35080,0.01893 0.35789,0.01396 0.36000,0.01249C0.36211,0.01102 0.35868,0.01355 0.36068,0.01200C0.36268,0.01045 0.36945,0.00521 0.37200,0.00321C0.37455,0.00121 0.37397,0.00171 0.37597,0.00000C0.37797,-0.00171 0.38176,-0.00506 0.38400,-0.00706C0.38624,-0.00906 0.38743,-0.01008 0.38943,-0.01200C0.39143,-0.01392 0.39403,-0.01659 0.39600,-0.01859C0.39797,-0.02059 0.39924,-0.02179 0.40124,-0.02400C0.40324,-0.02621 0.40629,-0.02983 0.40800,-0.03183C0.40971,-0.03383 0.40953,-0.03339 0.41153,-0.03600C0.41353,-0.03861 0.41853,-0.04549 0.42000,-0.04749C0.42147,-0.04949 0.41907,-0.04591 0.42037,-0.04800C0.42168,-0.05009 0.42589,-0.05663 0.42783,-0.06000C0.42977,-0.06337 0.43098,-0.06621 0.43200,-0.06821C0.43302,-0.07021 0.43282,-0.06937 0.43393,-0.07200C0.43504,-0.07463 0.43731,-0.08000 0.43866,-0.08400C0.44001,-0.08800 0.44114,-0.09200 0.44201,-0.09600C0.44289,-0.10000 0.44361,-0.10568 0.44394,-0.10800C0.44427,-0.11032 0.44393,-0.10794 0.44400,-0.10994C0.44407,-0.11194 0.44434,-0.11776 0.44434,-0.12000C0.44434,-0.12224 0.44421,-0.12136 0.44400,-0.12336C0.44379,-0.12536 0.44376,-0.12856 0.44309,-0.13200C0.44243,-0.13544 0.44139,-0.14000 0.44001,-0.14400C0.43864,-0.14800 0.43618,-0.15322 0.43485,-0.15600C0.43351,-0.15878 0.43328,-0.15869 0.43200,-0.16069C0.43072,-0.16269 0.42916,-0.16541 0.42716,-0.16800C0.42516,-0.17059 0.42181,-0.17422 0.42000,-0.17622C0.41819,-0.17822 0.41832,-0.17821 0.41632,-0.18000C0.41432,-0.18179 0.41054,-0.18496 0.40800,-0.18696C0.40546,-0.18896 0.40309,-0.19063 0.40109,-0.19200C0.39909,-0.19337 0.39885,-0.19356 0.39600,-0.19517C0.39315,-0.19678 0.38686,-0.20017 0.38400,-0.20164C0.38114,-0.20311 0.38086,-0.20314 0.37886,-0.20400C0.37686,-0.20486 0.37514,-0.20566 0.37200,-0.20682C0.36886,-0.20798 0.36400,-0.20972 0.36000,-0.21097C0.35600,-0.21222 0.35124,-0.21349 0.34800,-0.21433C0.34476,-0.21517 0.34256,-0.21556 0.34056,-0.21600C0.33856,-0.21644 0.33876,-0.21647 0.33600,-0.21695C0.33324,-0.21744 0.32800,-0.21836 0.32400,-0.21892C0.32000,-0.21948 0.31600,-0.21995 0.31200,-0.22033C0.30800,-0.22072 0.30400,-0.22101 0.30000,-0.22123C0.29600,-0.22145 0.29200,-0.22159 0.28800,-0.22166C0.28400,-0.22173 0.28000,-0.22172 0.27600,-0.22164C0.27200,-0.22156 0.26800,-0.22141 0.26400,-0.22119C0.26000,-0.22098 0.25600,-0.22069 0.25200,-0.22035C0.24800,-0.22000 0.24400,-0.21958 0.24000,-0.21911C0.23600,-0.21863 0.23149,-0.21800 0.22800,-0.21749C0.22451,-0.21697 0.22107,-0.21633 0.21907,-0.21600C0.21707,-0.21567 0.21851,-0.21597 0.21600,-0.21549C0.21349,-0.21501 0.20800,-0.21398 0.20400,-0.21313C0.20000,-0.21228 0.19600,-0.21134 0.19200,-0.21039C0.18800,-0.20945 0.18400,-0.20831 0.18000,-0.20743C0.17600,-0.20655 0.17200,-0.20529 0.16800,-0.20511C0.16400,-0.20492 0.15970,-0.20451 0.15600,-0.20632C0.15230,-0.20814 0.14777,-0.21366 0.14577,-0.21600C0.14377,-0.21834 0.14457,-0.21834 0.14400,-0.22034C0.14343,-0.22234 0.14280,-0.22472 0.14235,-0.22800C0.14190,-0.23128 0.14160,-0.23600 0.14128,-0.24000C0.14095,-0.24400 0.14075,-0.24800 0.14041,-0.25200C0.14006,-0.25600 0.13966,-0.26000 0.13920,-0.26400C0.13873,-0.26800 0.13821,-0.27200 0.13763,-0.27600C0.13705,-0.28000 0.13641,-0.28400 0.13570,-0.28800C0.13499,-0.29200 0.13401,-0.29696 0.13339,-0.30000C0.13278,-0.30304 0.13245,-0.30425 0.13200,-0.30625C0.13155,-0.30825 0.13143,-0.30904 0.13068,-0.31200C0.12993,-0.31496 0.12865,-0.32000 0.12752,-0.32400C0.12640,-0.32800 0.12518,-0.33207 0.12392,-0.33600C0.12267,-0.33993 0.12068,-0.34558 0.12000,-0.34758C0.11932,-0.34958 0.12066,-0.34593 0.11985,-0.34800C0.11904,-0.35007 0.11681,-0.35600 0.11515,-0.36000C0.11349,-0.36400 0.11108,-0.36934 0.10989,-0.37200C0.10870,-0.37466 0.10901,-0.37396 0.10800,-0.37596C0.10699,-0.37796 0.10568,-0.38066 0.10385,-0.38400C0.10202,-0.38734 0.09835,-0.39371 0.09704,-0.39600C0.09574,-0.39829 0.09733,-0.39572 0.09600,-0.39772C0.09467,-0.39972 0.09106,-0.40513 0.08906,-0.40800C0.08706,-0.41087 0.08555,-0.41292 0.08400,-0.41492C0.08245,-0.41692 0.08177,-0.41770 0.07977,-0.42000C0.07777,-0.42230 0.07387,-0.42674 0.07200,-0.42874C0.07013,-0.43074 0.07058,-0.43016 0.06858,-0.43200C0.06658,-0.43384 0.06239,-0.43776 0.06000,-0.43976C0.05761,-0.44176 0.05623,-0.44256 0.05423,-0.44400C0.05223,-0.44544 0.05104,-0.44658 0.04800,-0.44839C0.04496,-0.45021 0.03848,-0.45363 0.03600,-0.45490C0.03352,-0.45616 0.03512,-0.45524 0.03312,-0.45600C0.03112,-0.45676 0.02752,-0.45841 0.02400,-0.45943C0.02048,-0.46045 0.01600,-0.46152 0.01200,-0.46211C0.00800,-0.46271 0.00400,-0.46300 0.00000,-0.46300C-0.00400,-0.46300 -0.00800,-0.46271 -0.01200,-0.46211C-0.01600,-0.46152 -0.02048,-0.46045 -0.02400,-0.45943Z"/>
+              <image id="portal-erosion" href="assets/erosion-noise.png" x="-.08" y="-.06" width=".16" height=".12" opacity="0" transform="translate(720 415) scale(630 630)" preserveAspectRatio="none"/>
+            </mask>
+          </defs>
+          <rect class="white-field" x="-1" y="-1" width="1442" height="902" fill="white"/>
+          <g id="scene-content" mask="url(#portal)">
+            <rect class="scene-field" x="-1" y="-1" width="1442" height="902" fill="#174238"/>
+            <text class="stage-lettering" x="720" y="455" text-anchor="middle" dominant-baseline="middle" fill="#70a591" opacity=".12">BLOOM</text>
+            <g id="collage">
+              <g class="depth-plane" data-plane="5" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-5" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-5" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-5)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-5)">
+                  <image class="plane-photo" href="assets/bloom-flowers.webp" x="534.857" y="309.872" width="370.286" height="246.857" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="534.857" y="309.872" width="370.286" height="246.857" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="11" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-11" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-11" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-11)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-11)">
+                  <image class="plane-photo" href="assets/bouquet-pink.webp" x="413.745" y="219.219" width="243.529" height="304.412" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="413.745" y="219.219" width="243.529" height="304.412" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="10" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-10" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-10" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-10)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-10)">
+                  <image class="plane-photo" href="assets/bouquet-watercolor.webp" x="610.097" y="82.059" width="232.258" height="290.323" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="610.097" y="82.059" width="232.258" height="290.323" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="4" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-4" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-4" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-4)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-4)">
+                  <image class="plane-photo" href="assets/bloom-detail.webp" x="499.413" y="299.021" width="216.000" height="162.406" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="499.413" y="299.021" width="216.000" height="162.406" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="9" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-9" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-9" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-9)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-9)">
+                  <image class="plane-photo" href="assets/bouquet-dream.webp" x="758.005" y="343.948" width="274.909" height="343.636" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="758.005" y="343.948" width="274.909" height="343.636" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="2" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-2" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-2" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-2)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-2)">
+                  <image class="plane-photo" href="assets/bouquet-garden.webp" x="632.861" y="213.399" width="259.200" height="324.000" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="632.861" y="213.399" width="259.200" height="324.000" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="8" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-8" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-8" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-8)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-8)">
+                  <image class="plane-photo" href="assets/bouquet-spring.webp" x="476.858" y="374.429" width="260.426" height="325.532" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="476.858" y="374.429" width="260.426" height="325.532" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="3" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-3" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-3" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-3)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-3)">
+                  <image class="plane-photo" href="assets/bouquet-tender.webp" x="778.115" y="333.312" width="184.000" height="230.000" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="778.115" y="333.312" width="184.000" height="230.000" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="7" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-7" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-7" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-7)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-7)">
+                  <image class="plane-photo" href="assets/bouquet-white.webp" x="812.568" y="152.746" width="225.000" height="281.250" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="812.568" y="152.746" width="225.000" height="281.250" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="1" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-1" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-1" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-1)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-1)">
+                  <image class="plane-photo" href="assets/bloom-team.webp" x="358.707" y="316.514" width="226.286" height="150.857" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="358.707" y="316.514" width="226.286" height="150.857" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="6" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-6" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-6" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-6)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-6)">
+                  <image class="plane-photo" href="assets/bouquet-red.webp" x="373.494" y="95.464" width="258.750" height="323.437" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="373.494" y="95.464" width="258.750" height="323.437" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+              <g class="depth-plane" data-plane="0" transform="">
+                <defs>
+                  <radialGradient id="photo-feather-0" cx=".5" cy=".5" r=".71"><stop class="feather-start" offset="100%" stop-color="white"/><stop class="feather-edge" offset="100%" stop-color="white" stop-opacity="1"/></radialGradient>
+                  <mask id="photo-mask-0" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="url(#photo-feather-0)"/></mask>
+                </defs>
+                <g class="plane-paper" mask="url(#photo-mask-0)">
+                  <image class="plane-photo" href="assets/bouquet-heart.webp" x="426.952" y="433.701" width="250.435" height="313.043" preserveAspectRatio="xMidYMid slice"/>
+                  <rect class="plane-shade" x="426.952" y="433.701" width="250.435" height="313.043" fill="#102f28" opacity="0"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <div class="intro-copy"><p class="intro-eyebrow">ЦВЕТОЧНЫЙ БУТИК · ХАБАРОВСК</p><h1 id="hero-title" data-lines="Цветы, которые|говорят за вас.">Цветы, которые<br>говорят за вас.</h1><p class="intro-note">Авторская флористика. Искренние чувства.</p><a class="button hero-cta" href="#work">Выбрать букет</a></div>
+        <div class="scroll-hint" aria-hidden="true"><span class="scroll-line"></span><span class="hint-desktop">Проведите по цветку · Листайте вниз</span><span class="hint-mobile">Коснитесь цветка · Листайте вниз</span></div>
+        <div class="scene-corner"><span>КИМ Ю ЧЕНА, 4<br>ЕЖЕДНЕВНО · 08:00–20:00</span></div>
+      </div>
+    </section>
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work-heading"><div><p class="eyebrow">МАЛЕНЬКИЕ ПОВОДЫ. БОЛЬШИЕ ЧУВСТВА.</p><h2 id="work-title">Скажите это<br><em>цветами.</em></h2></div><div class="selection-note"><p>Для самых близких.<br>И просто для себя.</p><a class="text-link" href="https://bloomboutique.ru/catalog/" target="_blank" rel="noopener noreferrer">Весь каталог</a></div></div>
+      <div class="project-grid">
+        <article class="project">
+          <a class="project-cover" href="https://bloomboutique.ru/catalog/tsvetochnye-kompozitsii-v-korobkakh/chudesnyy-sad/" target="_blank" rel="noopener noreferrer" aria-label="Выбрать композицию Чудесный сад"><img src="assets/bouquet-garden.webp" alt="Авторская композиция Чудесный сад в розовой коробке" width="750" height="938" loading="lazy"><span class="product-note">Нежность в деталях</span><span class="product-view">Посмотреть букет</span></a>
+          <div class="product-meta"><div><h3>Чудесный сад</h3><p>Композиция в коробке</p></div><span class="price">5 400 ₽</span></div>
+        </article>
+        <article class="project">
+          <a class="project-cover" href="https://bloomboutique.ru/catalog/tsvetochnye-kompozitsii-v-korobkakh/serdtse-v-tsvetu/" target="_blank" rel="noopener noreferrer" aria-label="Выбрать композицию Сердце в цвету"><img src="assets/bouquet-heart.webp" alt="Цветочная композиция Сердце в цвету" width="750" height="938" loading="lazy"><span class="product-note">Вместо тысячи слов</span><span class="product-view">Посмотреть букет</span></a>
+          <div class="product-meta"><div><h3>Сердце в цвету</h3><p>Композиция в коробке</p></div><span class="price">4 950 ₽</span></div>
+        </article>
+        <article class="project">
+          <a class="project-cover" href="https://bloomboutique.ru/catalog/nashi-khity/istoriya-nezhnosti/" target="_blank" rel="noopener noreferrer" aria-label="Выбрать букет История нежности"><img src="assets/bouquet-tender.webp" alt="Букет История нежности" width="750" height="938" loading="lazy"><span class="product-note">Для особенного человека</span><span class="product-view">Посмотреть букет</span></a>
+          <div class="product-meta"><div><h3>История нежности</h3><p>Авторский букет</p></div><span class="price">7 600 ₽</span></div>
+        </article>
+      </div>
+      <div class="catalog-foot"><span>У каждого букета — своё настроение.</span><a class="button button-outline" href="https://bloomboutique.ru/catalog/" target="_blank" rel="noopener noreferrer">Найти своё</a></div>
+    </section>
+    <section class="boutique" id="boutique" aria-labelledby="boutique-title">
+      <div class="boutique-image"><img src="assets/bloom-team.webp" alt="Команда флористов Bloom Boutique" width="1600" height="1043" loading="lazy"><span>BLOOM BOUTIQUE / ЛЮДИ И ЦВЕТЫ</span></div>
+      <div class="boutique-copy"><p class="eyebrow">ПРОФЕССИОНАЛЬНО. ЛИЧНО. С ЛЮБОВЬЮ.</p><h2 id="boutique-title">У красоты<br>есть свой<br><em>характер.</em></h2><p class="boutique-text">Услышим ваши пожелания, подберём цветы и соберём букет, который передаст именно ваше настроение.</p><a class="button button-paper" href="https://t.me/bloom_boutique_flowerskhv" target="_blank" rel="noopener noreferrer">Обсудить с флористом</a></div>
+    </section>
+    <footer class="site-footer" id="contacts">
+      <div class="footer-main"><a class="footer-wordmark" href="#top">BLOOM<br><span>BOUTIQUE</span></a><div><p>В самом сердце Хабаровска.</p><address>ул. Ким Ю Чена, 4</address><p class="opening-hours">Ежедневно, 08:00–20:00</p></div><div class="footer-contact"><a href="tel:+79098220575">+7 909 822-05-75</a><a class="text-link" href="https://t.me/bloom_boutique_flowerskhv" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></div></div>
+      <div class="footer-bottom"><span>Bloom Boutique</span><nav class="footer-links" aria-label="Информация о бутике"><a href="#boutique">О бутике</a><a href="https://bloomboutique.ru/delivery-and-payment/" target="_blank" rel="noopener noreferrer">Доставка</a><a href="https://bloomboutique.ru/" target="_blank" rel="noopener noreferrer">Оригинальный сайт</a></nav><div class="footer-credit"><span class="signature"><img src="assets/made-by-tatarin-light.svg" alt="made by tatarin" width="220" height="55"></span><p class="concept-credit" lang="en">Independent design concept by tatarin.</p></div></div>
+    </footer>
+  </main>
+</body>
+</html>

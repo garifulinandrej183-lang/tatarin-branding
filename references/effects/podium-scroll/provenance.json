@@ -1,0 +1,14 @@
+{
+  "report_filename": "Podium_Scroll_Analysis_2026-10-03.html",
+  "report_sha256": "a9111b7e536f01ca0a265a93efb24d1083af870d2ee52e5e25293d7d350b57ae",
+  "imported": "2026-10-05",
+  "implementation": {
+    "slug": "bloom-boutique-concept",
+    "title": "Bloom Boutique — цветы, которые говорят за вас",
+    "url": "https://bloom-boutique-concept.garifulinandrej183.chatgpt.site",
+    "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+    "version": 11,
+    "archive_hash": "sha256:b6d3766a770c1d9fc15f75013d9941d3159c59ccbb5a94195d7d3e9ec19bf3b2"
+  },
+  "verification": "See implementation.md and ../../VALIDATION.md"
+}

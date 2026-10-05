@@ -1,0 +1,15 @@
+{
+  "report_filename": "Quartr_Visual_Style_Tatarin.pdf",
+  "report_sha256": "88bdefb32c9f52ca39d692e69488ec3acf1ac4d31b17f96acacbe319ea7f3a88",
+  "imported": "2026-10-05",
+  "implementation": {
+    "slug": "tatarin-portfolio",
+    "title": "tatarin — Андрей Гарифулин",
+    "url": "https://tatarin-portfolio.garifulinandrej183.chatgpt.site",
+    "source_commit": "a06141cfc40b4204be14b140323f829a05bc7753",
+    "version": 21,
+    "archive_hash": "sha256:81abc33a676cf1199d187fcb7edbbaebdd53599a3acd13a4495f6bdaa115288c"
+  },
+  "verification": "See implementation.md and ../../VALIDATION.md",
+  "text_extraction": "Full per-page text; images omitted and columns may read in a different order."
+}

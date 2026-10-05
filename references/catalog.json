@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-05",
+  "effects": [
+    {
+      "id": "helloshivam-fluid",
+      "title": "Жидкость за курсором",
+      "reference_url": "https://www.helloshivam.com/",
+      "tags": [
+        "fluid",
+        "cursor",
+        "touch",
+        "glow",
+        "жидкость",
+        "шлейф"
+      ],
+      "status": "published-source-tested",
+      "analysis": "references/effects/helloshivam-fluid/analysis.md",
+      "prompt": "references/effects/helloshivam-fluid/codex-prompt.md",
+      "implementation_site": "https://andrei-tatarin-fluid.garifulinandrej183.chatgpt.site",
+      "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+      "source_version": 21
+    },
+    {
+      "id": "quartr-portrait",
+      "title": "Портретная мозаика и маска обработки",
+      "reference_url": "https://quartr-sketch.vercel.app/nvidia",
+      "tags": [
+        "portrait",
+        "mosaic",
+        "mask",
+        "ascii",
+        "halftone",
+        "портрет",
+        "маска"
+      ],
+      "status": "published-source-snapshot",
+      "analysis": "references/effects/quartr-portrait/analysis.md",
+      "prompt": "references/effects/quartr-portrait/codex-prompt.md",
+      "implementation_site": "https://tatarin-portfolio.garifulinandrej183.chatgpt.site",
+      "source_commit": "a06141cfc40b4204be14b140323f829a05bc7753",
+      "source_version": 21
+    },
+    {
+      "id": "alphabet-symbols",
+      "title": "Поле символов и кольца",
+      "reference_url": "https://quartr-sketch.vercel.app/alphabet",
+      "tags": [
+        "symbols",
+        "rings",
+        "particles",
+        "spring",
+        "символы",
+        "сферы",
+        "кольца"
+      ],
+      "status": "published-source-tested",
+      "analysis": "references/effects/alphabet-symbols/analysis.md",
+      "prompt": "references/effects/alphabet-symbols/codex-prompt.md",
+      "implementation_site": "https://tatarin-motion-lab.garifulinandrej183.chatgpt.site",
+      "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+      "source_version": 9
+    },
+    {
+      "id": "pacome-spiral",
+      "title": "Пространственная спираль карточек",
+      "reference_url": "https://pacomepertant.com/",
+      "tags": [
+        "spiral",
+        "gallery",
+        "inertia",
+        "scroll",
+        "спираль",
+        "карточки"
+      ],
+      "status": "published-source-snapshot",
+      "analysis": "references/effects/pacome-spiral/analysis.md",
+      "prompt": "references/effects/pacome-spiral/codex-prompt.md",
+      "implementation_site": "https://tatarin-spiral-lab.garifulinandrej183.chatgpt.site",
+      "source_commit": "6c7dad89ec193af68ba5ecc56519ab00ccf04544",
+      "source_version": 9
+    },
+    {
+      "id": "podium-scroll",
+      "title": "Раскрытие маски и пролёт коллажа",
+      "reference_url": "https://podium.global/",
+      "tags": [
+        "scroll",
+        "aperture",
+        "depth",
+        "collage",
+        "пролёт",
+        "маска",
+        "коллаж"
+      ],
+      "status": "published-source-tested",
+      "analysis": "references/effects/podium-scroll/analysis.md",
+      "prompt": "references/effects/podium-scroll/codex-prompt.md",
+      "implementation_site": "https://bloom-boutique-concept.garifulinandrej183.chatgpt.site",
+      "source_commit": "e93ecc6f041dc47a6f99003f912d7aaac90d0e52",
+      "source_version": 11
+    },
+    {
+      "id": "belen-gallery",
+      "title": "Галерея с поворотом вокруг X",
+      "reference_url": "https://www.belenjones.com/",
+      "tags": [
+        "gallery",
+        "drum",
+        "rotation",
+        "video",
+        "scroll",
+        "барабан",
+        "галерея"
+      ],
+      "status": "analysis-only",
+      "analysis": "references/effects/belen-gallery/analysis.md",
+      "prompt": "references/effects/belen-gallery/codex-prompt.md",
+      "implementation_site": null,
+      "source_commit": null,
+      "source_version": null
+    }
+  ]
+}

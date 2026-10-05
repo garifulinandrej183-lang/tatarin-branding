@@ -1,0 +1,14 @@
+{
+  "report_filename": "HelloShivam_VisualStyle_Motion.md",
+  "report_sha256": "50686a05d8cc0df76171970d659630a6a58452498aeb29985fdeaafcead9a892",
+  "imported": "2026-10-05",
+  "implementation": {
+    "slug": "andrei-tatarin-fluid",
+    "title": "Андрей Гарифулин — AI-дизайнер / Digital creator",
+    "url": "https://andrei-tatarin-fluid.garifulinandrej183.chatgpt.site",
+    "source_commit": "d1bd569752139d5735d7acdc4b60f8a01a57de45",
+    "version": 21,
+    "archive_hash": "sha256:4f57f22c942e3884c5bfff7e1e7b9446cd1d7e417717301486e213dc2a952339"
+  },
+  "verification": "See implementation.md and ../../VALIDATION.md"
+}

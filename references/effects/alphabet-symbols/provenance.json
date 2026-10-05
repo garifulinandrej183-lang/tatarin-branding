@@ -1,0 +1,14 @@
+{
+  "report_filename": "Alphabet_Reference_Analysis_2026-10-03.html",
+  "report_sha256": "4d07ed0b2d0bdcd179e6c2c6bf19383d4fe45722322958475aeb2302111260d6",
+  "imported": "2026-10-05",
+  "implementation": {
+    "slug": "tatarin-motion-lab",
+    "title": "tatarin · Форма в движении",
+    "url": "https://tatarin-motion-lab.garifulinandrej183.chatgpt.site",
+    "source_commit": "552847d5cc03eed7fd8a35d9bef74cc0434afe26",
+    "version": 9,
+    "archive_hash": "sha256:a0a2c1dc1b8731e2d142fff6c596ddcd5dc4185036c4b023cce23e138e10d82d"
+  },
+  "verification": "See implementation.md and ../../VALIDATION.md"
+}

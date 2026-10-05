@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Сайт Анны, место для Вашего проекта и абстрактные карточки в пространственной галерее. Прокрутите, чтобы вращать спираль.">
+  <title>Спираль — made by tatarin</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/spiral-favicon.svg">
+  <link rel="preload" href="./assets/spiral-inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./src/styles/spiral.css">
+  <script type="module" src="./src/spiral.js"></script>
+  <!-- deployment:metadata -->
+</head>
+<body>
+  <main class="spiral-page scene-static">
+    <header class="scene-header">
+      <h1 class="scene-title">Спираль<span>04 карточки</span></h1>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <div class="wordmark" aria-label="made by tatarin">
+          <span class="wordmark-rest" aria-hidden="true">tatarin<span class="wordmark-dot">.</span></span>
+          <span class="wordmark-track" aria-hidden="true"><span class="wordmark-prefix"></span><span class="wordmark-name"></span><span class="wordmark-dot wordmark-typed-dot">.</span></span>
+          <span class="wordmark-measure" aria-hidden="true"><span>made by </span>tatarin.</span>
+        </div>
+        <div class="header-actions">
+          <a class="nav-button expand-button home-link" href="./index.html" aria-label="На главную"><img src="./assets/spiral-home.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">На главную</span></a>
+          <a class="nav-button expand-button telegram-link" href="https://t.me/tatarin_web" target="_blank" rel="noopener noreferrer" aria-label="Telegram @tatarin_web"><img src="./assets/spiral-telegram.png" width="64" height="64" alt=""><span class="button-label" aria-hidden="true">Telegram</span></a>
+          <button class="pause-button" type="button" disabled aria-pressed="false" aria-label="Приостановить движение спирали" title="Пауза"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" /></svg></button>
+        </div>
+      </nav>
+    </header>
+    <div class="scene-stage" role="region" aria-label="Галерея проектов" tabindex="0">
+      <canvas class="spiral-canvas" aria-hidden="true"></canvas>
+      <ul class="fallback-gallery" aria-label="Карточки проектов">
+        <li><a data-art-id="anya-lann" href="https://ru.anyalann.ru/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт Анны — Anya lann studio в новой вкладке"><div class="art-media"><img src="./assets/spiral-anya-lann.webp" alt="Anya lann studio: молочный маникюр и название студии на светлом фоне." width="1280" height="753" decoding="async"></div><span><strong>Сайт Анны</strong><small>Anya lann studio</small></span></a></li>
+        <li><a data-art-id="your-project" href="https://t.me/tatarin_web" target="_blank" rel="noopener noreferrer" aria-label="Обсудить проект в Telegram — @tatarin_web, в новой вкладке"><div class="art-media"><img src="./assets/spiral-your-project.webp" alt="Тут мог быть Ваш проект — белая надпись и лаймовая татарская каллиграфия на матово-чёрной карточке, внизу слева — крупная иконка и надпись «Написать мне в Telegram»." width="1280" height="753" decoding="async"><span class="project-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg></span></div><span><strong>Ваш проект</strong><small>Написать в Telegram</small></span></a></li>
+        <li><div data-art-id="signal" class="fallback-card"><div class="art-media"><img src="./assets/spiral-signal.webp" alt="Абстрактные складки электрического зелёного цвета." width="1280" height="753" decoding="async"></div></div></li>
+        <li><div data-art-id="current" class="fallback-card"><div class="art-media"><img src="./assets/spiral-current.webp" alt="Абстрактное синее стекло и оранжевая светящаяся дуга." width="1280" height="753" decoding="async"></div></div></li>
+      </ul>
+    </div>
+    <div class="gallery-control" role="group" aria-label="Выбор карточки">
+      <button class="step-button" type="button" aria-label="Предыдущая карточка"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 20 9 12l10-8v16Z" /><path d="M5 19V5" /></svg></button>
+      <div class="art-caption art-caption-static" aria-label="Карточка 01 из 04"><img src="./assets/spiral-anya-lann.webp" alt="" width="48" height="48"><span class="caption-text"><strong>Сайт Анны</strong><small>Anya lann studio</small></span><span class="caption-count" aria-hidden="true">01<span> / 04</span></span></div>
+      <button class="step-button" type="button" aria-label="Следующая карточка"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 4 10 8-10 8V4Z" /><path d="M19 5v14" /></svg></button>
+    </div>
+    <footer class="scene-footer">
+      <p class="interaction-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="7" /><path d="M12 6v4" /></svg><span class="hint-desktop">Карточки проектов</span><span class="hint-mobile">Карточки проектов</span></p>
+      <div class="signature-frame"><img src="./assets/spiral-signature.png" width="1600" height="400" alt="made by tatarin"></div>
+    </footer>
+  </main>
+</body>
+</html>
