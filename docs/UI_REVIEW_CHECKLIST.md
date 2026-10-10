@@ -31,9 +31,10 @@ This is an evidence checklist, not a claim of complete WCAG conformance, full se
 - [ ] Accent, selection, and semantic status roles are intentional and not ambiguously interchangeable.
 - [ ] Primary, secondary, and neutral information differ in prominence without becoming unreadable.
 - [ ] Touched light and dark theme states have both been checked, where those themes are supported.
-- [ ] The signature uses the official local asset and the correct theme variant.
-- [ ] Signature artwork, text, proportions, and existing asset files are unchanged.
-- [ ] [SPECIFICATION.md](SPECIFICATION.md) and [USAGE.md](USAGE.md) readability minimums are met without treating them as fixed/target/maximum widths.
+- [ ] The signature uses native typography with canonical lowercase `made by tatarin` and a separately lime final `.` by default; a graphical image is optional, not required.
+- [ ] On dark surfaces, default signature lettering is off-white `#F2F2F2` with lime `#B6F24A` period; on light surfaces lettering becomes near-black `#050505` while the period remains visible.
+- [ ] If an optional SVG/PNG signature is selected, the correct local asset/theme variant is used and the original artwork and proportions are unchanged.
+- [ ] [SPECIFICATION.md](SPECIFICATION.md) and [USAGE.md](USAGE.md) readability requirements are met; image-specific minimum widths are not imposed on native text or treated as fixed/target/maximum widths.
 - [ ] Bottom-of-interface placement is used where practical; any alternate placement has a UX reason and does not obstruct content.
 
 ## Accessibility and interaction

@@ -14,7 +14,7 @@ Use a calm functional foundation, clear typography, disciplined spacing, coheren
 
 The Tatarin family identity should come from the quality and consistency of the interaction system and the official `made by tatarin` signature, not from imposing the same layout, font, or exact accent color on every product.
 
-Keep author identity separate from operational meaning. Do not recolor the official signature to match an app accent. Follow [SPECIFICATION.md](SPECIFICATION.md) and [USAGE.md](USAGE.md) for assets, variants, placement, minimum readability, and local storage. Do not restate those minimums as fixed, preferred, or maximum dimensions.
+Keep author identity separate from operational meaning. Prefer the typographic `made by tatarin.` mark with its lime final period; official image assets are optional, and their original artwork must not be recolored. Follow [SPECIFICATION.md](SPECIFICATION.md) and [USAGE.md](USAGE.md) for text/image variants, placement, readability, and local storage when an image is chosen. Do not apply image-specific width minimums to native text, and do not impose Tatarin's brand colors on unrelated client interfaces.
 
 ## 2. Select a product profile
 

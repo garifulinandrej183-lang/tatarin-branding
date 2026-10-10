@@ -27,7 +27,7 @@ Reference products for **quality level**, not literal copying:
 
 Do **not** copy their branding, layouts, proprietary assets, or visual identity. Use them only as a benchmark for hierarchy, spacing, typography, interaction quality, motion, component states, and product polish.
 
-Aim for a recognizable family of well-made products, not an identical visual template. Share interaction quality, hierarchy, state semantics, and disciplined styling while adapting composition to each product. Keep the official author signature distinct from application accent and status colors. Do not redraw or recolor it, or reinterpret minimum readability sizes as fixed target dimensions. Use the official local asset and prefer bottom-of-interface placement when it does not harm the workflow, as defined in the signature documentation.
+Aim for a recognizable family of well-made products, not an identical visual template. Share interaction quality, hierarchy, state semantics, and disciplined styling while adapting composition to each product. Keep the `made by tatarin.` author signature distinct from application accent and status colors. Default to **native typographic lettering** (off-white `#F2F2F2` with the final period in lime `#B6F24A` on dark surfaces, near-black `#050505` letters on light surfaces). The existing official graphic asset is **optional**, not mandatory; when it is used, preserve its artwork. Apply image-specific minimum widths only to images, never to text. Prefer bottom-of-interface placement when it does not harm the workflow. Do not impose Tatarin's brand palette on the entire client application.
 
 ---
 

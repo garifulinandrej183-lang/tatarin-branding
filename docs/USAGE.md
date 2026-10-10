@@ -1,181 +1,92 @@
-# Usage Guide
+# Signature Usage Guide
 
-This repository is the canonical source for the `made by tatarin` signature.
+Canonical brand rules: [SPECIFICATION.md](SPECIFICATION.md).
 
-## Development rule
+## Default behavior for developers and coding agents
 
-Do not make production applications depend on GitHub availability at runtime.
+Use a **native typographic signature by default**. An image, logo file, downloaded SVG, or PNG is **not mandatory**.
 
-During development:
+The intended visual result on a dark background is `made by tatarin.`: `made by tatarin` in off-white with **only the terminal `.`** in lime. Keep words lowercase. Treat the author credit as a finishing touch, like an artist's signature, not as the project's main heading or main brand.
 
-1. Select the appropriate official variant.
-2. Download it from this repository.
-3. Store it locally in the project, preferably under `assets/branding/`.
-4. Reference the local asset from the application.
+Use the host project's typography and adapt weight, size, tracking, spacing, and footer alignment so the mark feels native. Do not copy a font blindly from the Tatarin portfolio into client projects.
 
-If a valid local copy already exists, do not redownload it unnecessarily.
+## Brand tokens
 
-## Variant selection
+| Token | Value | Role |
+| --- | --- | --- |
+| `--tatarin-black` | `#050505` | Near-black backgrounds, lettering on light surfaces |
+| `--tatarin-white` | `#F2F2F2` | Default white-looking lettering on dark surfaces |
+| `--tatarin-lime` | `#B6F24A` | Final signature dot and selected Tatarin accents |
 
-- Dark UI background → use `made-by-tatarin-light.svg`.
-- Light UI background → use `made-by-tatarin-dark.svg`.
-- Decorative background / watermark → use `made-by-tatarin-watermark.svg`.
-- Prefer SVG when the framework supports it correctly.
-- Use PNG only as a fallback where SVG is unsuitable.
+Use these for **Tatarin author identity**, not as an instruction to restyle a client's full product UI.
 
-Use the `light` or `dark` variant when the purpose is an actual readable author signature in a footer, menu, About screen, settings area, or product chrome.
+## Copy-ready native HTML/CSS example
 
-Use the `watermark` variant only when the artwork is intentionally decorative and visually integrated into a larger area. Do not use the watermark asset as a tiny footer badge.
-
-## Placement
-
-The signature should be visually integrated but subordinate to the primary UI. It must not obstruct controls, important text, gameplay, navigation, or accessibility-critical content.
-
-When technically practical and when it does not interfere with the interface, place the signature at the very bottom of the interface, preferably in the lowest suitable footer / bottom area. This is the default placement preference across products.
-
-Use another location only when bottom placement would harm usability, responsive layout, visual hierarchy, gameplay, or the intended composition.
-
-Allowed implementation-level adjustments:
-
-- size;
-- layout position;
-- application-level opacity.
-
-Do not modify the official artwork itself unless explicitly instructed.
-
-## Size and readability
-
-The signature must be secondary, but it must still be readable.
-
-For normal readable `light` / `dark` signature placement:
-
-- default desktop/web minimum width: 180 px;
-- default mobile minimum width: 145 px;
-- typical opacity: 0.80–1.00.
-
-These are minimum readable widths only, not target or fixed sizes. Let the layout determine the final size and use a larger signature whenever space allows and it remains visually balanced.
-
-For decorative `watermark` placement:
-
-- default minimum width: 280 px;
-- typical opacity: approximately 0.12–0.30;
-- keep the artwork large enough that the composition and `made by tatarin` text remain identifiable;
-- make it quieter with opacity, placement, or surrounding contrast rather than excessive downscaling.
-
-The watermark minimum is a readability floor only, not a target or fixed width.
-
-At 100% interface zoom, a user should be able to recognize `made by tatarin` without zooming in or closely inspecting the asset.
-
-Do not make the signature extremely small merely to satisfy a requirement that it be "subtle." If the text becomes difficult to read, increase the rendered size.
-
-If the available footer or toolbar cannot accommodate a readable signature, prefer one of these solutions instead of shrinking it below the recommended minimum:
-
-- give the branding area more horizontal space;
-- move the signature to another edge or footer row;
-- place it on the main menu, landing screen, About, Settings, or Credits screen;
-- use the standard `light` / `dark` asset instead of the watermark variant.
-
-A coding agent should treat the documented widths as minimum readability constraints only. Do not infer a preferred, target, or maximum width from them. Project-specific requirements or explicit user instructions may override the minimums when necessary.
-
-## Recommended placement by application type
-
-The signature does not need to appear in exactly the same place in every project. However, when possible and non-disruptive, the default preference is the very bottom of the interface. Integrate it according to the product's UI structure and visual hierarchy rather than forcing a bottom placement when it would make the interface worse.
-
-### Desktop and web applications
-
-Prefer the very bottom of the interface, ideally inside the lowest existing footer or bottom area. Bottom-left or bottom-right placement is appropriate when it fits the layout.
-
-Example:
-
-```text
-┌────────────────────────────────────────┐
-│                                        │
-│               main UI                  │
-│                                        │
-│                                        │
-│                     made by tatarin    │
-└────────────────────────────────────────┘
+```html
+<span class="tatarin-signature">
+  made by tatarin<span class="tatarin-signature__dot">.</span>
+</span>
 ```
 
-The signature should remain visually secondary to the application's primary content and controls, but it should not be reduced below comfortable readability.
+```css
+.tatarin-signature {
+  --tatarin-black: #050505;
+  --tatarin-white: #f2f2f2;
+  --tatarin-lime: #b6f24a;
+  color: var(--tatarin-white);
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
 
-### Games
+.tatarin-signature__dot {
+  color: var(--tatarin-lime);
+}
 
-Prefer placing the signature in menus rather than keeping it permanently visible during gameplay.
-
-Good locations include:
-
-- main menu;
-- pause menu when visually appropriate;
-- settings or credits screen;
-- a subtle menu watermark.
-
-Example:
-
-```text
-MAIN MENU
-
-[ Continue ]
-[ New Game ]
-[ Settings ]
-[ Exit ]
-
-made by tatarin
+/* Add this variant only when placing the mark on a light surface. */
+.tatarin-signature--on-light {
+  color: var(--tatarin-black);
+}
 ```
 
-Avoid persistent gameplay overlays unless the design explicitly calls for them.
+This markup renders visible text; it requires **no runtime fetch**, remote image, JavaScript, external font, or GitHub dependency. Use the existing project font and layout rules. When switching to a light background, add `tatarin-signature--on-light` to the outer span. Check that the lime period is still visible against its surrounding surface.
 
-### Utilities and productivity applications
+Do not insert spaces between `tatarin` and the final period. Do not turn the entire phrase lime, replace words, change capitalization, or add a standalone decorative lime circle in place of the period. The visual punctuation is a dot.
 
-A footer is usually the preferred location, especially when the interface already displays version or build information.
+## Choosing typography versus official artwork
 
-Example:
+1. **Default:** render `made by tatarin.` as native text with the lime period.
+2. **When appropriate:** use an official SVG/PNG signature, for example when a deliberately graphical mark is requested. The supplied artwork is optional and should not be modified.
+3. **Decorative only:** use the official watermark variant for a suitably large decorative surface, not a tiny footer badge.
 
-```text
-Version 0.4.2                    made by tatarin
-```
+Do not convert the native text version into a raster image or import SVGs just to satisfy a branding convention. Conversely, do not replace a project-approved image signature if the user specifically wants it.
 
-The signature may also appear in an About or Settings screen, but this should normally be supplementary rather than the only branding location if a subtle main-interface placement is practical.
+### Existing optional assets
 
-### Applications with multiple screens
+- `assets/signature/made-by-tatarin-light.svg` — image for dark interfaces.
+- `assets/signature/made-by-tatarin-dark.svg` — image for light interfaces.
+- `assets/signature/made-by-tatarin-watermark.svg` — decorative watermark.
+- Matching PNG files are fallback exports when SVG is unsuitable.
 
-Do not duplicate the signature mechanically on every screen.
+For **image-based** usage only: store the selected official asset locally, preferably in `assets/branding/`; never make the published app fetch it from GitHub at runtime. If a valid local file exists, reuse it. Do not recolor, redraw, distort, or rename the original asset without explicit direction.
 
-Preferred placement order:
+Raw source directory: `https://raw.githubusercontent.com/garifulinandrej183-lang/tatarin-branding/main/assets/signature/`.
 
-1. shared application layout or footer;
-2. main menu or primary landing screen;
-3. About / Settings / Credits;
-4. watermark on selected screens where visually appropriate.
+## Placement and readability
 
-If the application uses a shared UI architecture, prefer a reusable branding component rather than duplicating raw asset references across multiple screens.
+Prefer the lowest suitable footer/bottom area when that works with the application's layout. Bottom-right or bottom-left are both appropriate. For games, a menu or credits screen may be better. Avoid obstructing navigation, gameplay, forms, or accessibility-critical content.
 
-A reusable component may expose implementation-level options such as:
+For **native text**, choose a readable font size and contrast based on the project; do **not** treat the image-width numbers below as requirements for text. Avoid extremely small, faint, or crowded lettering. A concise author mark should remain recognizable at 100% zoom.
 
-```text
-BrandingSignature
-├── variant: auto | light | dark | watermark
-├── opacity
-├── size
-└── position
-```
+For optional standard **SVG/PNG images**, the legacy recommended default minimum widths remain **180 px desktop** and **145 px mobile**, with typical application opacity **0.80–1.00**. These are minimum readability sizes, **not** ideal/fixed/maximum widths.
 
-For applications with light and dark themes, switch automatically between the official light and dark assets where practical.
+For an optional **decorative watermark**, the default minimum is **280 px**, with typical application opacity **0.12–0.30**. If too little space exists, change placement instead of making the watermark illegible.
 
-## Suggested project path
+On light surfaces choose near-black text with the same lime dot, and consider dot visibility against the background. Do not force white-on-white branding or sacrifice legibility for a fixed default.
 
-```text
-assets/branding/
-```
+## Multi-screen interfaces
 
-Suggested filenames should remain unchanged after download so automated tooling can identify them reliably.
+Do not duplicate the mark on every screen automatically. Prefer a shared footer or layout, then a main menu/landing screen, then About/Settings/Credits when a persistent footer is inappropriate. A reusable component may accept `variant: text | image | watermark`, `contrast: on-dark | on-light`, size, and position.
 
-## Raw asset URLs
-
-Base path:
-
-```text
-https://raw.githubusercontent.com/garifulinandrej183-lang/tatarin-branding/main/assets/signature/
-```
-
-Official assets are published under this path.
+The host application's product identity and semantic colors remain distinct from this author credit. Apply the full black/lime/off-white aesthetic only when the project itself is intentionally made by tatarin-branded or the user specifically asks for it.

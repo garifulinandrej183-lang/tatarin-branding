@@ -1,16 +1,38 @@
 # tatarin-branding
 
-Official branding assets and shared product UI standards for projects by Tatarin.
+Official visual identity, signature assets, and shared UI/UX quality standards for projects by Tatarin.
 
-This repository is the canonical source for the `made by tatarin` author signature and the default UI/UX quality standard used across UI projects.
+This repository is the canonical reference for the `made by tatarin.` author mark. A supplied image file is **not required**: a native typographic signature is the preferred default.
 
-## Canonical signature text
+## Brand palette
 
-`made by tatarin`
+Based on the established madebytatarin.ru design reference:
 
-Do not change capitalization, wording, or spacing unless the repository specification is intentionally revised.
+| Role | HEX | Usage |
+| --- | --- | --- |
+| Near-black | `#050505` | Brand dark background and dark lettering on light surfaces |
+| Lime | `#B6F24A` | Signature dot and selective brand accents |
+| Off-white | `#F2F2F2` | Default lettering on dark surfaces |
 
-## Asset structure
+The off-white is the site's preferred white-looking text color; it is not necessary to substitute pure `#FFFFFF`. Use these colors for the Tatarin identity, **not as a mandate to recolor unrelated client products**.
+
+## Signature: typography first
+
+Canonical words: `made by tatarin` (lowercase, exact spelling and spacing).
+
+Default visual signature: **`made by tatarin.`**, with only the final period (`.`) in lime `#B6F24A`.
+
+- Dark background: text `#F2F2F2` + lime dot `#B6F24A`.
+- Light background: text `#050505` + the same lime dot, with adequate visibility.
+- Match the host project's typography, spacing, size, alignment, and placement so the author mark looks native rather than pasted on.
+- The signature is a discreet author credit, like an artist's signature on a work, not the client's primary brand.
+- Do **not** force a graphic logo/image, download assets, or recreate an image when styled text accomplishes the job.
+
+An existing graphic signature (SVG/PNG) remains a valid **optional** choice when requested or better suited to the composition. Do not modify the existing official artwork.
+
+See [docs/SPECIFICATION.md](docs/SPECIFICATION.md) for the canonical brand rules and [docs/USAGE.md](docs/USAGE.md) for copy-ready HTML/CSS and integration guidance.
+
+## Optional graphical assets
 
 ```text
 assets/
@@ -23,34 +45,25 @@ assets/
     made-by-tatarin-watermark.png
 ```
 
-SVG is the canonical format. PNG files are fallback exports.
-
-## Usage
-
-Applications should not load these assets from GitHub at runtime. Development agents should download the required official asset into the project and reference the local copy.
-
-See `docs/USAGE.md` and `docs/SPECIFICATION.md` for implementation and signature design requirements.
+For optional graphics, SVG is the canonical source and PNG the fallback. If an official image is used, store it locally in the product; do not fetch it from GitHub at runtime. The typographic version needs no image asset.
 
 ## Product UI standard
 
-For new interfaces, redesigns, and material UI changes, use [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md) as the canonical default UI/UX standard unless the user or the target project provides more specific instructions.
-
-The standard defines the expected contemporary product quality bar, design-system principles, anti-template rules, responsive behavior, interaction states, accessibility, performance, and change discipline for coding agents.
+For new interfaces, redesigns, and material UI changes, follow [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md) by default unless the user or target project supplies more specific requirements.
 
 Supporting documents:
 
-- [UI pattern library](docs/UI_PATTERNS.md): task-based profiles for operational workspaces, document tools, and focused utilities, with applicability, behavior contracts, and examples.
-- [UI review checklist](docs/UI_REVIEW_CHECKLIST.md): scoped checks for workflow continuity, states, branding, accessibility, offline behavior, and actual review evidence.
+- [UI pattern library](docs/UI_PATTERNS.md): task-based patterns, behavior contracts, and examples.
+- [UI review checklist](docs/UI_REVIEW_CHECKLIST.md): scoped implementation and quality checks.
 
-The canonical entry point remains [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md). Apply patterns to the task rather than imposing one template or adding unrequested features. Signature assets and rules remain governed by `docs/SPECIFICATION.md` and `docs/USAGE.md`; this UI documentation update does not change the branding specification version.
-
-## Version
-
-Current branding specification: `1.0.0`
-
+The signature and palette remain governed by [docs/SPECIFICATION.md](docs/SPECIFICATION.md) and [docs/USAGE.md](docs/USAGE.md). A client project's own brand and UI design system take precedence for the product itself.
 
 ## Website reference effects
 
-Reusable motion studies, applied source snapshots and Codex transfer instructions: [references/README.md](references/README.md).
+Reusable motion studies, applied source snapshots, and Codex transfer instructions: [references/README.md](references/README.md).
 
-Start with [references/CATALOG.md](references/CATALOG.md), then read the chosen effect's analysis, prompt and implementation notes. Verified code checks and visual-validation limits are recorded separately.
+Start with [references/CATALOG.md](references/CATALOG.md) and then read the chosen effect's analysis, prompt, and implementation notes.
+
+## Version
+
+Current branding specification: `1.1.0` (adds canonical black/lime/off-white tokens and text-first signature option; preserves existing graphics).
